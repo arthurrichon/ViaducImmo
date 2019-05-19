@@ -17,6 +17,11 @@
     </div>
 
     <div class="lastAdded--wrapper">
+      <div class="lastAddedFilters-container">
+        <h2>Derniers ajouts</h2>
+        <p>Les biens immobiliers ajoutés récemment près de chez vous</p>
+      </div>
+      <div class="blue-background"></div>
       <RealEstateAdList
         :adList="lastAds"
       />
@@ -79,5 +84,44 @@
     font-family: 'Karla', sans-serif;
     font-weight: bold;
     color: #637282;
+  }
+
+  .lastAdded--wrapper {
+    position: relative;
+    margin-bottom: 50px;
+  }
+
+  .lastAddedFilters-container {
+
+    text-align: center;
+  }
+
+  .lastAddedFilters-container h2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1B2733;
+    margin: 5px;
+  }
+
+  .lastAddedFilters-container p {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #637282;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .blue-background {
+    background-color: #F4FCFF;
+    border-radius: 5px;
+    position: absolute;
+    width: 70%;
+    top: -50px;
+    bottom: 150px;
+    left: 15%;
+    right: 15%;
+    z-index: -1;
   }
 </style>

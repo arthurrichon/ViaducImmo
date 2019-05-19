@@ -27,9 +27,9 @@
     data: () => {
       return ({
         menuContent: [
-          { name: 'Achat', path: '/buy' },
-          { name: 'Location', path: '/buy' },
-          { name: 'Vente', path: '/buy' },
+          { name: 'Acheter', path: '/buy' },
+          { name: 'Louer', path: '/buy' },
+          { name: 'Vendre', path: '/buy' },
           { name: 'Agence', path: '/us' }
         ]
       });
