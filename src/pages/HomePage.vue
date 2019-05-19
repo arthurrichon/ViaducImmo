@@ -1,0 +1,83 @@
+<template>
+  <div class="homePage--container">
+
+    <!-- Main headband -->
+    <div class="headband--wrapper">
+      <div class="caption--wrapper">
+        <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span> un bien<br> immobilier en Mayenne avec Viaduc.</h2>
+        <p class="title-sub">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod.</p>
+
+        <div class="searchBar--container">
+          Searchbar here (wip)
+        </div>
+      </div>
+      <div class="image--wrapper">
+        <img src="../assets/illu-1.png" alt="">
+      </div>
+    </div>
+
+    <div class="lastAdded--wrapper">
+      <RealEstateAdList
+        :adList="lastAds"
+      />
+    </div>
+  </div>
+</template>
+
+<script>
+  import RealEstateAdList from '../components/RealEstateAdList'
+
+  export default {
+    name: 'HomePage',
+    components: {
+      RealEstateAdList
+    },
+    data: () => ({
+      lastAds: [
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
+        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'}
+      ]
+    })
+  }
+</script>
+
+
+<style>
+  .homePage--container {
+
+  }
+
+  .headband--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 10%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .lightblue {
+    color: #3FD1FF;
+  }
+
+  h2.title-big {
+    font-size: 33px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: #1B2733;
+  }
+
+  p.title-sub {
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    color: #637282;
+  }
+</style>

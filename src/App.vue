@@ -1,54 +1,40 @@
 <template>
-  <div id="app">
-    <header>
-      <span>Vue.js PWA</span>
-    </header>
+  <div>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <router-view></router-view>
+      <Header />
+      <router-view/>
     </main>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'app'
-}
+    import Header from '@/components/Header'
+    import Footer from '@/components/Footer'
+    export default {
+      name: 'App',
+      components: {
+        Header,
+        Footer
+      }
+    }
 </script>
 
+
 <style>
-body {
-  margin: 0;
-}
+    body {
+        margin: 0;
+    }
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
-
-main {
-  text-align: center;
-  margin-top: 40px;
-}
-
-header {
-  margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #35495E;
-  color: #ffffff;
-}
-
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
-}
+    @font-face {
+      font-family: "Karla";
+      src: url("/fonts/KARLA-REGULAR.ttf") format("ttf"),
+    }
+    @font-face {
+      font-family: "Rubik";
+      src: url("/fonts/RUBIK-REGULAR.ttf") format("ttf"),
+    }
+    @font-face {
+      font-family: "Gotham";
+      src: url("/fonts/GOTHAMMEDIUM.ttf") format("ttf"),
+    }
 </style>
