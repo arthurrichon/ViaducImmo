@@ -1,11 +1,11 @@
 <template lang="html">
   <div class="card-item">
     <div class="img-wrapper">
-      <img v-bind:src="imagePath(ad.img)" />
+      <img v-bind:src="imagePath(ad.images[0].image_princ_min)" />
     </div>
     <div class="caption-wrapper">
       <div class="type-wrapper">
-        <h2 class="caption-title">{{ ad.type }}</h2>
+        <h2 class="caption-title">{{ ad.type_bien[0] }}</h2>
         <p class="caption-address"><img src="" alt="">{{ ad.address }}</p>
       </div>
       <div class="price-wrapper">
@@ -41,7 +41,7 @@ export default {
   },
   methods: {
     imagePath: function (img) {
-      return require('../assets/' + img)
+      return require('../../static/data/' + img)
     }
   }
 }

@@ -11,11 +11,26 @@
 <script>
     import Header from '@/components/Header'
     import Footer from '@/components/Footer'
+
     export default {
       name: 'App',
       components: {
         Header,
         Footer
+      },
+      data () {
+        return {
+          annonces: []
+        }
+      },
+      methods: {
+        getXml () {
+          let xml = require('../static/base.xml')
+          this.annonces = xml.biens.bien
+        }
+      },
+      mounted () {
+        this.getXml()
       }
     }
 </script>

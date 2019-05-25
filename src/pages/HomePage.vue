@@ -4,7 +4,7 @@
     <!-- Main headband -->
     <div class="headband--wrapper">
       <div class="caption--wrapper">
-        <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span> un bien<br> immobilier en Mayenne avec Viaduc.</h2>
+        <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span><br> un bien immobilier en Mayenne avec Viaduc.</h2>
         <p class="title-sub">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod.</p>
 
         <div class="searchBar--container">
@@ -38,18 +38,14 @@
       RealEstateAdList
     },
     data: () => ({
-      lastAds: [
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'},
-        { img: 'house-demo-1.jpg', type: 'Appartement', price: '59.000 €', address: 'Laval (59000)', smeters: '48', rooms: '3', bedrooms: '1'}
-      ]
-    })
+      lastAds: []
+    }),
+    mounted () {
+      this.$nextTick(function () {
+        this.lastAds = this.$parent.annonces
+      })
+    }
+
   }
 </script>
 
