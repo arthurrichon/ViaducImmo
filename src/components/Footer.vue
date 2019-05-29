@@ -23,7 +23,7 @@ export default {
   span {
     color: white;
     font-family: 'Karla', sans-serif;
-    font-weight: bold;
+    /* font-weight: bold; */
     font-size: 16px;
   }
 </style>

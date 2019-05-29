@@ -66,6 +66,13 @@ module.exports = {
       {
         test: /\.xml$/i,
         use: 'xml-loader',
+      },
+      {
+        test: /\.php$/,
+        loaders: [
+          'html-minify',
+          'php-loader'
+        ]
       }
     ]
   }

@@ -2,7 +2,7 @@
   <header>
     <div class="header-wrapper">
       <div class="menu-wrapper">
-        <!-- <img src="" alt=""> -->
+        <img src="../assets/logositeSVG.svg" alt="">
         <ul class="menu">
           <li v-for="item in menuContent">
             <router-link :to="{ name: item.path, params: {} }">{{ item.name }}</router-link>
@@ -15,7 +15,7 @@
           <img src="../assets/call.svg" alt="">
           <span>02 43 98 09 52</span>
         </div>
-        <div class="button">Contact</div>
+        <a class="button" href="#contact">Contact</a>
       </div>
     </div>
   </header>
@@ -29,7 +29,7 @@
         menuContent: [
           { name: 'Acheter', path: '/buy' },
           { name: 'Louer', path: '/buy' },
-          { name: 'Vendre', path: '/buy' },
+          { name: 'Vendre', path: 'SellPage' },
           { name: 'Agence', path: '/us' }
         ]
       });
@@ -57,7 +57,13 @@
   }
 
   .menu-wrapper {
+    display: flex;
     align-items: center;
+    justify-content: flex-start;
+  }
+
+  .menu-wrapper img {
+    height: 35px;
   }
 
   .menu {
@@ -66,6 +72,7 @@
     justify-content: flex-start;
     padding-left: 0;
     margin: 0;
+    margin-left: 30px;
   }
 
   .menu li {
@@ -102,5 +109,6 @@
     border-radius: 20px;
     color: #FFF;
     margin-left: 30px;
+    text-decoration: none;
   }
 </style>

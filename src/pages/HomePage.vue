@@ -15,7 +15,7 @@
         <img src="../assets/illu-1.png" alt="">
       </div>
     </div>
-
+    <input type="text" name="" value="" v-model="search">
     <div class="lastAdded--wrapper">
       <div class="lastAddedFilters-container">
         <h2>Derniers ajouts</h2>
@@ -24,21 +24,27 @@
       <div class="blue-background"></div>
       <RealEstateAdList
         :adList="lastAds"
+        :searchFilter="search"
       />
     </div>
+
+    <ContactForm />
   </div>
 </template>
 
 <script>
   import RealEstateAdList from '../components/RealEstateAdList'
+  import ContactForm from '../components/ContactForm'
 
   export default {
     name: 'HomePage',
     components: {
-      RealEstateAdList
+      RealEstateAdList,
+      ContactForm
     },
     data: () => ({
-      lastAds: []
+      lastAds: [],
+      search: ''
     }),
     mounted () {
       this.$nextTick(function () {

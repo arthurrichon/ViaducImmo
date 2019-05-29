@@ -1,33 +1,33 @@
 <template lang="html">
-  <div class="card-item">
+  <router-link class="card-item" :to="{ name: 'ad', params: { ad: ad.idbien[0] }}">
     <div class="img-wrapper">
       <img v-bind:src="imagePath(ad.images[0].image_princ_min)" />
     </div>
     <div class="caption-wrapper">
       <div class="type-wrapper">
         <h2 class="caption-title">{{ ad.type_bien[0] }}</h2>
-        <p class="caption-address"><img src="" alt="">{{ ad.address }}</p>
+        <p class="caption-address"><img src="" alt="">{{ ad.ville[0] }} ({{ ad.code_postal[0] }})</p>
       </div>
       <div class="price-wrapper">
-        <p class="price">{{ ad.price }}</p>
+        <p class="price">{{ ad.prix[0] }} €</p>
       </div>
     </div>
 
     <div class="card-footer">
       <div class="info-box">
-        <img src="" alt="">
-        <span>{{ ad.smeters }}</span>
+        <img src="../assets/arrow-double.svg" alt="">
+        <span>{{ ad.surface_habitable[0] }} m</span>
       </div>
       <div class="info-box">
         <img src="" alt="">
-        <span>{{ ad.rooms }}</span>
+        <span>{{ ad.nb_piece[0] }}</span>
       </div>
       <div class="info-box">
         <img src="" alt="">
-        <span>{{ ad.bedrooms }}</span>
+        <span>{{ ad.nb_chambre[0] }}</span>
       </div>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>
@@ -52,7 +52,7 @@ export default {
     overflow: hidden;
     width: 30%;
     border-radius: 5px;
-    box-shadow: 3px 3px 6px;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
     background-color: white;
     display: flex;
     justify-content: flex-start;
@@ -82,8 +82,8 @@ export default {
     padding: 15px;
   }
 
-  .type-wrapper, .price-wrapper {
-    width: 50%;
+  .type-wrapper {
+    width: 75%;
   }
 
   .caption-address {
@@ -94,6 +94,7 @@ export default {
   }
 
   .price-wrapper {
+    width: 25%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -118,15 +119,26 @@ export default {
   .info-box {
     border-right: 1px solid #707070;
     width: calc(100% / 3);
-    padding: 8px;
+    padding: 15px 10px;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
     font-size: 16px;
     color: #637282;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-box span {
+    margin-left: 10px;
   }
 
   .info-box:last-child {
     border-right: 0;
+  }
+
+  a {
+    text-decoration: none;
   }
 </style>
