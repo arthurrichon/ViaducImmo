@@ -4,15 +4,15 @@
       <div class="form-bloc full">
         <h2>Type de bien</h2>
         <div class="buttons-container">
-          <div class="big-button" v-on:click="toggleType('maison')" v-bind:class="{ active: type === 'maison'}">
+          <div class="big-button" v-on:click="toggleType('maison')" v-bind:class="{ active: formData.type === 'maison'}">
             <div class="image maison"></div>
             <p>Maison</p>
           </div>
-          <div class="big-button" v-on:click="toggleType('appartement')" v-bind:class="{ active: type === 'appartement'}">
+          <div class="big-button" v-on:click="toggleType('appartement')" v-bind:class="{ active: formData.type === 'appartement'}">
             <div class="image appartement"></div>
             <p>Appartement</p>
           </div>
-          <div class="big-button" v-on:click="toggleType('fdc')" v-bind:class="{ active: type === 'fdc'}">
+          <div class="big-button" v-on:click="toggleType('fdc')" v-bind:class="{ active: formData.type === 'fdc'}">
             <div class="image fdc"></div>
             <p>Fond de Commerce</p>
           </div>
@@ -58,7 +58,7 @@
       </div>
       <div class="form-bloc half">
         <h2>Vous avez autre chose à nous dire ?</h2>
-        <textarea name="name" class="standard-input" placeholder="message" rows="9"></textarea>
+        <textarea name="name" class="standard-input" placeholder="message" rows="9" v-model="formData.message"></textarea>
         <vue-recaptcha :size="'50px'" sitekey="6Lchm6UUAAAAAOgHxs-ivJHt5SC2sUSWylB7K7qc">
           <!-- <button type="button" name="button">click me</button> -->
         </vue-recaptcha>
@@ -70,13 +70,13 @@
 
 <script>
 import VueRecaptcha from 'vue-recaptcha';
+import axios from 'axios';
 
 export default {
   name: 'SellForm',
   components: { VueRecaptcha },
   data: () => ({
     step: 1,
-    type: 'maison',
     alreadySelling: false,
     days: {
       Lundi: { selected: false, matin: false, aprem: false },
@@ -87,43 +87,50 @@ export default {
     },
     formData: {
       loc: '',
-      type: this.type || '',
+      type: 'maison',
       surface: '',
       nbPieces: '',
       surfaceTerr: '',
       garage: '',
-      nom: 'a',
+      nom: '',
       prenom: '',
       tel: '',
-      message: 'b',
-      formattedBody: ''
+      message: '',
+      formattedBody: '',
+      dispo: []
     }
   }),
   methods: {
     toggleType (type) {
-      this.type = type
-      console.log(Email)
+      this.formData.type = type
     },
     submit () {
-      this.formBody()
-      // window.open('mailto:richon.arthur@gmail.com?subject=Formulaire de contact agenceviaduc.fr&body='+this.formData.formattedBody);
-      this.$http.post('/static/contact_vente.php', { name: this.formData.nom, message: this.formData.message }).then(res => {
+      this.formDispoContent()
+      axios({
+        method: 'post',
+        url: '/static/contact_vente.php',
+        data: this.formData
+      }).then(res => {
         console.log(res)
       })
     },
-    formBody () {
-      let str = ''
-      str += ('Nom : ' + this.formData.nom + ' ' + this.formData.prenom + '&nbsp;')
-      str += ('Téléphone : ' + this.formData.tel + '&nbsp;')
-      str += ('Location : ' + this.formData.loc + '&nbsp;')
-      str += ('Surface : ' + this.formData.surface + '&nbsp;')
-      str += ('Surface du terrain : ' + this.formData.surfaceTerr + '&nbsp;')
-      str += ('Nombre de Pièces : ' + this.formData.nbPieces + '&nbsp;')
-      str += ('Garage : ' + this.formData.garage + '&nbsp;')
-      str += ('Message : ' + this.formData.message + '&nbsp;')
-      console.log(str)
-
-      this.formattedBody = str.toString()
+    formDispoContent () {
+      let dayArray = []
+      for (let day in this.days) {
+        if (this.days[day].selected) {
+          let matin, aprem
+          this.days[day].matin ? matin = 'Matin' : matin = ''
+          this.days[day].aprem ? aprem = 'Après-Midi' : aprem = ''
+          let str = day + ' : ' + matin + ' ' + aprem
+          dayArray.push(str)
+        }
+      }
+      this.formData.dispo = dayArray
+    }
+  },
+  watch: {
+    type: function (c, o) {
+      this.formData.type = this.type
     }
   }
 }

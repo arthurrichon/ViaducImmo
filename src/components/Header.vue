@@ -2,7 +2,7 @@
   <header>
     <div class="header-wrapper">
       <div class="menu-wrapper">
-        <img src="../assets/logositeSVG.svg" alt="">
+        <img src="../assets/logositeSVG.svg" alt="" v-on:click="goToHome()">
         <ul class="menu">
           <li v-for="item in menuContent">
             <router-link :to="{ name: item.path, params: {} }">{{ item.name }}</router-link>
@@ -27,12 +27,17 @@
     data: () => {
       return ({
         menuContent: [
-          { name: 'Acheter', path: '/buy' },
-          { name: 'Louer', path: '/buy' },
           { name: 'Vendre', path: 'SellPage' },
-          { name: 'Agence', path: '/us' }
+          { name: 'Agence', path: '/agence' }
         ]
       });
+    },
+    methods: {
+      goToHome () {
+        // { name: 'Acheter', path: '/buy' },
+        // { name: 'Louer', path: '/buy' },
+        this.$router.push('/')
+      }
     }
   }
 </script>
@@ -64,6 +69,7 @@
 
   .menu-wrapper img {
     height: 35px;
+    cursor: pointer;
   }
 
   .menu {
@@ -78,7 +84,18 @@
   .menu li {
     margin: 10px;
     list-style: none;
+    cursor: pointer;
   }
+
+  .menu li a {
+    transition: ease all 0.2s;
+  }
+
+  .menu li a:hover {
+    color: #3FD1FF;
+    transition: ease all 0.2s;
+  }
+
 
   .menu li a {
     text-decoration: none;

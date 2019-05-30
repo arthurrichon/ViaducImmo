@@ -12,10 +12,10 @@
       </div>
 
       <div class="column half">
-        <input type="text" name="" value="" class="standard-input" placeholder="Nom">
-        <input type="text" name="" value="" class="standard-input" placeholder="Email">
-        <textarea name="name" class="standard-input" placeholder="votre message"></textarea>
-        <button class="orange-button" type="button" name="button" v-on:click="step += 1">Envoyer</button>
+        <input type="text" name="" value="" class="standard-input" placeholder="Nom" v-model="formData.name">
+        <input type="text" name="" value="" class="standard-input" placeholder="Email" v-model="formData.email">
+        <textarea name="name" class="standard-input" placeholder="votre message" v-model="formData.message"></textarea>
+        <button class="orange-button" type="button" name="button" v-on:click="submit()">Envoyer</button>
       </div>
     </div>
 
@@ -24,8 +24,27 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
-  name: 'ContactForm'
+  name: 'ContactForm',
+  data: () => ({
+    formData: {
+      name: '',
+      email: '',
+      message: ''
+    }
+  }),
+  methods: {
+    submit () {
+      axios({
+        method: 'post',
+        url: '/static/contact.php',
+        data: this.formData
+      }).then(res => {
+        console.log('Mail envoyé')
+      })
+    }
+  }
 }
 </script>
 
@@ -85,6 +104,20 @@ export default {
 
 textarea.standard-input {
   min-height: 150px;
+}
+
+.orange-button {
+  border-radius: 5px;
+  border: 1px solid #FF8317;
+  background-color: #FF8317;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 20%;
+  text-align: center;
 }
 
 

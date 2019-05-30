@@ -15,15 +15,15 @@
 
     <div class="card-footer">
       <div class="info-box">
-        <img src="../assets/arrow-double.svg" alt="">
-        <span>{{ ad.surface_habitable[0] }} m</span>
+        <img src="../assets/arrow-double.svg" alt="" style="width: 20px; height: 20px;">
+        <span>{{ ad.surface_habitable[0] }} m²</span>
       </div>
       <div class="info-box">
-        <img src="" alt="">
+        <img src="../assets/rooms.svg" alt="" style="width: 30px; height: 20px;">
         <span>{{ ad.nb_piece[0] }}</span>
       </div>
       <div class="info-box">
-        <img src="" alt="">
+        <img src="../assets/bed.svg" alt="" style="width: 30px; height: 20px;">
         <span>{{ ad.nb_chambre[0] }}</span>
       </div>
     </div>
@@ -129,7 +129,6 @@ export default {
     align-items: center;
     justify-content: center;
   }
-
   .info-box span {
     margin-left: 10px;
   }

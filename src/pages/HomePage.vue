@@ -7,9 +7,9 @@
         <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span><br> un bien immobilier en Mayenne avec Viaduc.</h2>
         <p class="title-sub">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod.</p>
 
-        <div class="searchBar--container">
+        <!-- <div class="searchBar--container">
           Searchbar here (wip)
-        </div>
+        </div> -->
       </div>
       <div class="image--wrapper">
         <img src="../assets/illu-1.png" alt="">

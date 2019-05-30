@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="footer-container">
-    <span>Mentions légales / Design</span>
+    <router-link :to="'/mentions'">Mentions légales / Design</router-link>
   </div>
 </template>
 
@@ -20,10 +20,11 @@ export default {
     justify-content: center;
   }
 
-  span {
+  a {
     color: white;
     font-family: 'Karla', sans-serif;
     /* font-weight: bold; */
     font-size: 16px;
+    text-decoration: none;
   }
 </style>

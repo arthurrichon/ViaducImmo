@@ -4,6 +4,7 @@ import HomePage from '@/pages/HomePage'
 import RealEstatePage from '@/pages/RealEstatePage'
 import SellPage from '@/pages/SellPage'
 import MentionsPage from '@/pages/MentionsPage'
+import AgencePage from '@/pages/AgencePage'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/mentions',
       name: 'MentionsPage',
       component: MentionsPage
+    },
+    {
+      path: '/agence',
+      name: 'AgencePage',
+      component: AgencePage
     }
   ]
 })

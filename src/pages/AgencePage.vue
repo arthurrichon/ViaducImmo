@@ -2,7 +2,7 @@
   <div class="sellPage--container">
     <div class="title-container">
       <h2>L'agence <span class="lightblue">Viaduc Immobilier</span> vous<br>accueille tous les jours à Laval</h2>
-      <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr<br>sed diam nonumy eirmod.</p>
+      <p class="subline">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL.<br>Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p>
     </div>
 
     <div class="page-content">
@@ -11,15 +11,15 @@
         <p>Pas de panique, si vous ne connaissez pas certaines informations, <br>nous règleront cela ensemble lors de notre premier rendez-vous</p>
       </div>
     </div>
-
+    <ContactForm />
   </div>
 </template>
 
 <script>
-import SellForm from '@/components/SellForm'
+import ContactForm from '@/components/ContactForm'
 export default {
   name: 'AgencePage',
-  components: { SellForm }
+  components: { ContactForm }
 }
 </script>
 
