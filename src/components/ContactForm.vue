@@ -8,7 +8,10 @@
           <img class="logo" src="../assets/logositeverticalSVG.svg" alt="">
           <p>38 rue du vieux Saint Louis<br>53000 LAVAL<br>02 43 98 09 52<br>contact@agenceviaduc.fr</p>
         </div>
-        <img class="map" src="../assets/map.png" alt="">
+        <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.8922972850564!2d-0.774934884003273!3d48.07372177921832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808fdf461f9e58d%3A0x8de250e473138ac3!2s38+Rue+du+Vieux+Saint-Louis%2C+53000+Laval!5e0!3m2!1sfr!2sfr!4v1559215654568!5m2!1sfr!2sfr"
+width="580" height="250" frameborder="0" style="border:0"
+allowfullscreen></iframe>
       </div>
 
       <div class="column half">
