@@ -53,6 +53,11 @@
     box-sizing: border-box;
     font-family: 'Karla', sans-serif;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 10000;
   }
   .header-wrapper {
     width: 70%;
