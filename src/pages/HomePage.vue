@@ -12,7 +12,7 @@
         </div> -->
       </div>
       <div class="image--wrapper">
-        <img src="../assets/illu-1.png" alt="">
+        <img src="../assets/Viaduc.png" alt="">
       </div>
     </div>
     <input type="text" name="" value="" v-model="search">
@@ -61,6 +61,9 @@
 
   }
 
+  .image--wrapper img {
+    width: 500px;
+  }
   .headband--wrapper {
     display: flex;
     align-items: center;
