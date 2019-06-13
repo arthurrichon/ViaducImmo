@@ -2,16 +2,13 @@
   <div class="contactForm--container" id="contact">
     <h2 class="big-title">Contact</h2>
 
-    <div class="column-container">
+    <div class="column-container" v-bind:style="{width: width}">
       <div class="column half">
         <div class="content-details">
           <img class="logo" src="../assets/logositeverticalSVG.svg" alt="">
-          <p>38 rue du vieux Saint Louis<br>53000 LAVAL<br>02 43 98 09 52<br>contact@agenceviaduc.fr</p>
+          <p>137 rue du vieux saint Louis<br>53000 LAVAL<br>Transaction : 02 43 49 17 63 <br>Location : 06 34 54 04 06<br>contact@agenceviaduc.fr</p>
         </div>
-        <iframe
-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.8922972850564!2d-0.774934884003273!3d48.07372177921832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808fdf461f9e58d%3A0x8de250e473138ac3!2s38+Rue+du+Vieux+Saint-Louis%2C+53000+Laval!5e0!3m2!1sfr!2sfr!4v1559215654568!5m2!1sfr!2sfr"
-width="580" height="250" frameborder="0" style="border:0"
-allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.712312589115!2d-0.7735136843531094!3d48.07719567921862!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4808fdf5f262e7a3%3A0xf7206d9e47c1fd9a!2s137+Rue+du+Vieux+Saint-Louis%2C+53000+Laval!5e0!3m2!1sfr!2sfr!4v1559565781369!5m2!1sfr!2sfr" width="500" height="252" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
       <div class="column half">
@@ -37,6 +34,12 @@ export default {
       message: ''
     }
   }),
+  props: {
+    width: {
+      type: String,
+      default: '80%'
+    }
+  },
   methods: {
     submit () {
       axios({

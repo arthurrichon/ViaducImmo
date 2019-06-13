@@ -4,8 +4,8 @@
     <!-- Main headband -->
     <div class="headband--wrapper">
       <div class="caption--wrapper">
-        <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span><br> un bien immobilier en Mayenne avec Viaduc.</h2>
-        <p class="title-sub">Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod.</p>
+        <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span><br> un bien immobilier en Mayenne avec Viaduc Immobilier</h2>
+        <p class="title-sub">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL. Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p>
 
         <!-- <div class="searchBar--container">
           Searchbar here (wip)
@@ -28,7 +28,7 @@
       />
     </div>
 
-    <ContactForm />
+    <ContactForm :width="'80%'"/>
   </div>
 </template>
 

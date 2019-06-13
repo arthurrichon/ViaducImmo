@@ -1,7 +1,7 @@
 <template lang="html">
   <router-link class="card-item" :to="{ name: 'ad', params: { ad: ad.idbien[0] }}">
     <div class="img-wrapper">
-      <img v-bind:src="imagePath(ad.images[0].image_princ_min)" />
+      <img v-bind:src="imagePath(ad.images[0].image_1)" />
     </div>
     <div class="caption-wrapper">
       <div class="type-wrapper">
@@ -19,11 +19,11 @@
         <span>{{ ad.surface_habitable[0] }} m²</span>
       </div>
       <div class="info-box">
-        <img src="../assets/rooms.svg" alt="" style="width: 30px; height: 20px;">
+        <img src="../assets/pieces.svg" alt="" style="width: 30px; height: 20px;">
         <span>{{ ad.nb_piece[0] }}</span>
       </div>
       <div class="info-box">
-        <img src="../assets/bed.svg" alt="" style="width: 30px; height: 20px;">
+        <img src="../assets/bed-reworked.svg" alt="" style="width: 30px; height: 20px;">
         <span>{{ ad.nb_chambre[0] }}</span>
       </div>
     </div>

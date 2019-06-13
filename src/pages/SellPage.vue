@@ -2,13 +2,13 @@
   <div class="sellPage--container">
     <div class="title-container">
       <h2>Vous <span class="lightblue">vendez</span> votre bien,<br>nous pouvons vous aider.</h2>
-      <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr<br>sed diam nonumy eirmod.</p>
+      <!-- <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr<br>sed diam nonumy eirmod.</p> -->
     </div>
 
     <div class="page-content">
       <div class="page-content--title">
         <h2>Dites nous tout</h2>
-        <p>Pas de panique, si vous ne connaissez pas certaines informations, <br>nous règleront cela ensemble lors de notre premier rendez-vous</p>
+        <p>Si vous ne connaissez pas certaines informations, <br>nous règleront cela ensemble lors de notre premier rendez-vous</p>
       </div>
       <SellForm />
     </div>

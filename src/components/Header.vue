@@ -13,7 +13,7 @@
       <div class="contact-wrapper">
         <div class="phone-wrapper">
           <img src="../assets/call.svg" alt="">
-          <span>02 43 98 09 52</span>
+          <span>02 43 49 17 63</span>
         </div>
         <a class="button" href="#contact">Contact</a>
       </div>
@@ -28,7 +28,7 @@
       return ({
         menuContent: [
           { name: 'Vendre', path: 'SellPage' },
-          { name: 'Agence', path: '/agence' }
+          { name: 'Agence', path: 'AgencePage' }
         ]
       });
     },

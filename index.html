@@ -27,7 +27,7 @@
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
-  <body>
+  <body id="body" class="a">
     <noscript>
       This is your fallback content in case JavaScript fails to load.
     </noscript>

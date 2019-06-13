@@ -4,9 +4,9 @@
       <h2><span class="black">{{ ad.type_bien[0] }}</span> <span class="orange">{{ ad.prix[0] }} €</span></h2>
     </div>
 
-    <hooper :itemsToShow="3" :infiniteScroll="true" style="height: 288px;">
-      <slide v-for="(images, indx) in ad.images[0]" :key="indx" :index="indx">
-        <img class="slider-img" v-bind:src="imagePath(images[0])" alt="">
+    <hooper :itemsToShow="2" :infiniteScroll="true" style="height: 436px;">
+      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-if="name !== 'image_princ_min'" v-on:click.native="showLightbox(name)">
+        <img class="slider-img" v-bind:src="imagePath(images[0])" alt="" style="height: 100%" >
       </slide>
       <slide>
         <div class="custom-slide">
@@ -21,7 +21,7 @@
     <div class="adcontent-container">
       <div class="bloc fullwidth-bloc">
         <h2 class="standard-title">Description</h2>
-        <p class="standard-content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <p id="description" class="standard-content">{{ decode(ad.description_internet[0]) }}</p>
       </div>
 
       <div class="bloc third-bloc">
@@ -48,7 +48,7 @@
         <h2 class="standard-title">À savoir</h2>
 
         <ul class="standard-list-container">
-          <li v-if="ad.description_internet[0].length">Travaux à prévoir : {{ decode(ad.description_internet[0]) }}</li>
+          <!-- <li v-if="ad.description_internet[0].length">Travaux à prévoir : {{ decode(ad.description_internet[0]) }}</li> -->
           <li v-if="ad.taxe_fonciere[0].length">Taxe foncière : {{ ad.taxe_fonciere[0] }}</li>
           <li v-if="ad.montant_charges[0].length">Charges de coproriété : {{ ad.montant_charges[0] }}</li>
         </ul>
@@ -77,8 +77,8 @@
       </div>
 
     </div>
-
-    <ContactForm />
+    <Lightbox ref="lightbox" :image="lightboxImage" v-show="isModalVisible" @close="closeLightbox"/>
+    <ContactForm :width="'100%'"/>
   </div>
 </template>
 
@@ -86,14 +86,17 @@
 import ContactForm from '../components/ContactForm'
 import GraphComponent from '../components/GraphComponent'
 import { Hooper, Slide, Navigation as HooperNavigation } from 'Hooper'
+import Lightbox from '../components/Lightbox'
 
 import 'hooper/dist/hooper.css';
 
 export default {
   name: 'RealEstatePage',
-  components: { ContactForm, GraphComponent, Hooper, Slide, HooperNavigation },
+  components: { ContactForm, GraphComponent, Hooper, Slide, HooperNavigation, Lightbox },
   data: () => ({
-    ad: {}
+    ad: {},
+    lightboxImage: '',
+    isModalVisible: false
   }),
   mounted () {
     this.$nextTick(function () {
@@ -101,17 +104,33 @@ export default {
         return obj.idbien[0] === this.$route.params.ad
       })
       this.ad = ad
+      this.getDecodedDescription()
     })
 
   },
   methods: {
-    decode: function(str) {
-      var txt = document.createElement('textarea');
+    decode: function (str) {
+      var txt = document.createElement('textarea')
     	txt.innerHTML = str;
     	return txt.value;
     },
+    getDecodedDescription: function () {
+      var txt = document.createElement('textarea')
+    	txt.innerHTML = this.ad.description_internet[0]
+      let container = document.getElementById("description")
+      container.innerHTML = txt.value
+    },
     imagePath: function (img) {
       return require('../../static/data/' + img)
+    },
+    showLightbox(imageArrayKey) {
+      this.$emit('hasModalOpened', true);
+      this.lightboxImage = this.imagePath(this.ad.images[0][imageArrayKey])
+      this.isModalVisible = true;
+    },
+    closeLightbox() {
+      this.$emit('hasModalOpened', false);
+      this.isModalVisible = false;
     }
   }
 }
@@ -171,6 +190,7 @@ export default {
   color: #637282;
   font-weight: bold;
   margin: 10px 0;
+  list-style-image: url('../assets/puce.svg');
 }
 
 .slider-img {
