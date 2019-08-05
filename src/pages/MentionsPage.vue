@@ -598,12 +598,87 @@ fait attribution exclusive de juridiction aux tribunaux compétents de
 LAVAL</p>
 
     </div>
+
+    <div class="grid">
+      <table>
+        <thead>
+          <tr>
+            <th v-for="column in gridData.columnNames">{{ column }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="line in gridData.columnData">
+            <td>{{ line.price }}</td>
+            <td>{{ line.percent }}</td>
+            <td>{{ line.euro ? line.euro : ( (parseInt(line.price) / 100) * parseInt(line.percent) )}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- <div class="mediator">
+      <img src="../assets/mediateur.png" alt="" style="width: 200px">
+    </div> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: 'MentionsPage'
+  name: 'MentionsPage',
+  data: () => ({
+    gridData: {
+      columnNames: ['Prix en vente €', 'Honoraires % TTC', 'Honoraires € TTC'],
+      columnData: [
+        { price: 'Forfait', percent: '', euro: '3500'},
+        { price: '20000', percent: '', euro: '4000'},
+        { price: '40000', percent: '', euro: '5000'},
+        { price: '60000', percent: '10' },
+        { price: '70000', percent: '9' },
+        { price: '80000', percent: '8.5' },
+        { price: '90000', percent: '8' },
+        { price: '100000', percent: '7.5' },
+        { price: '110000', percent: '7' },
+        { price: '120000', percent: '6.5' },
+        { price: '130000', percent: '6.2' },
+        { price: '140000', percent: '6' },
+        { price: '150000', percent: '5.8' },
+        { price: '160000', percent: '5.7' },
+        { price: '170000', percent: '5.5' },
+        { price: '180000', percent: '5.4' },
+        { price: '190000', percent: '5.4' },
+        { price: '200000', percent: '5.3' },
+        { price: '210000', percent: '5.3' },
+        { price: '220000', percent: '5.2' },
+        { price: '230000', percent: '5.2' },
+        { price: '240000', percent: '5.1' },
+        { price: '250000', percent: '5.1' },
+        { price: '260000', percent: '5' },
+        { price: '270000', percent: '5' },
+        { price: '280000', percent: '5' },
+        { price: '290000', percent: '4.9' },
+        { price: '300000', percent: '4.8' },
+        { price: '310000', percent: '4.8' },
+        { price: '320000', percent: '4.8' },
+        { price: '330000', percent: '4.8' },
+        { price: '340000', percent: '4.8' },
+        { price: '350000', percent: '4.8' },
+        { price: '360000', percent: '4.7' },
+        { price: '370000', percent: '4.6' },
+        { price: '380000', percent: '4.5' },
+        { price: '390000', percent: '4.5' },
+        { price: '400000', percent: '4.5' },
+        { price: '410000', percent: '4.5' },
+        { price: '420000', percent: '4.5' },
+        { price: '430000', percent: '4.5' },
+        { price: '440000', percent: '4.5' },
+        { price: '450000', percent: '4.5' },
+        { price: '460000', percent: '4.5' },
+        { price: '470000', percent: '4.5' },
+        { price: '480000', percent: '4.5' },
+        { price: '490000', percent: '4.5' },
+        { price: '500000 +', percent: '4' },
+      ]
+    }
+  })
 }
 </script>
 
@@ -637,5 +712,33 @@ export default {
 
   .title-container h2 {
     font-size: 33px;
+  }
+
+  .grid {
+    width: 60%;
+    margin: 20px auto;
+  }
+
+  .grid table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+
+  .grid table tbody tr {
+    border-top: 1px solid #8EAADB;
+  }
+
+  .grid table tbody tr:nth-child(2n+1) {
+    background-color: #D9E2F3;
+  }
+
+  .grid table tbody tr td {
+    border-right: 1px solid #8EAADB;
+    padding: 5px;
+  }
+
+  .grid table tbody tr td:nth-child(1) {
+    border-left: 1px solid #8EAADB;
   }
 </style>

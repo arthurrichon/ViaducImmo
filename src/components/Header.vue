@@ -24,6 +24,9 @@
       <!-- <a id="home" href="#">
         <span>Home</span>
       </a> -->
+      <div class="phone-number">
+        02 43 49 17 63
+      </div>
     </Slide>
   </header>
 </template>
@@ -169,6 +172,12 @@
     .bm-burger-button {
       left: 30px;
       top: 30px;
+    }
+    .phone-number {
+      position: absolute;
+      bottom: 70px;
+      color: #FF8317;
+      font-size: 30px;
     }
   }
 </style>

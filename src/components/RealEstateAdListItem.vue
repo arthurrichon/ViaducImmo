@@ -1,7 +1,7 @@
 <template lang="html">
   <router-link class="card-item" :to="{ name: 'ad', params: { ad: ad.idbien[0] }}" v-if="!adType.length || (adType.length && adType === ad.type_transaction[0])">
     <div class="img-wrapper">
-      <img v-bind:src="imagePath(ad.images[0].image_1)" />
+      <img v-bind:src="imagePath(ad.images[0].image_princ_min)" />
     </div>
     <div class="caption-wrapper">
       <div class="type-wrapper">

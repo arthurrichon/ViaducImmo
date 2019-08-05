@@ -108,7 +108,12 @@ export default {
         itemsToShow: 2,
         infiniteScroll: true,
         500: {
-          itemsToShow: 1
+          itemsToShow: 1,
+          infiniteScroll: true
+        },
+        1000: {
+          itemsToShow: 2,
+          infiniteScroll: true
         }
       }
     }
