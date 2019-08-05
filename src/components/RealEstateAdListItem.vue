@@ -1,5 +1,5 @@
 <template lang="html">
-  <router-link class="card-item" :to="{ name: 'ad', params: { ad: ad.idbien[0] }}">
+  <router-link class="card-item" :to="{ name: 'ad', params: { ad: ad.idbien[0] }}" v-if="!adType.length || (adType.length && adType === ad.type_transaction[0])">
     <div class="img-wrapper">
       <img v-bind:src="imagePath(ad.images[0].image_1)" />
     </div>
@@ -14,7 +14,7 @@
     </div>
 
     <div class="card-footer">
-      <div class="info-box">
+      <div class="info-box sqm">
         <img src="../assets/arrow-double.svg" alt="" style="width: 20px; height: 20px;">
         <span>{{ ad.surface_habitable[0] }} m²</span>
       </div>
@@ -37,6 +37,10 @@ export default {
     ad: {
       type: Object,
       default: function () { return {} }
+    },
+    adType: {
+      type: String,
+      default: ''
     }
   },
   methods: {
@@ -55,7 +59,7 @@ export default {
     box-shadow: 3px 3px 6px rgba(0,0,0,0.16);
     background-color: white;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     flex-direction: column;
     margin: 20px 0;
   }
@@ -83,7 +87,7 @@ export default {
   }
 
   .type-wrapper {
-    width: 75%;
+    width: 65%;
   }
 
   .caption-address {
@@ -94,7 +98,7 @@ export default {
   }
 
   .price-wrapper {
-    width: 25%;
+    width: 35%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -130,7 +134,11 @@ export default {
     justify-content: center;
   }
   .info-box span {
-    margin-left: 10px;
+    margin-left: 5px;
+  }
+
+  .info-box.sqm {
+    font-size: 14px;
   }
 
   .info-box:last-child {
@@ -139,5 +147,14 @@ export default {
 
   a {
     text-decoration: none;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .card-item {
+      width: 100%;
+    }
+
+    /* width: 80%;
+margin: 0 auto; */
   }
 </style>

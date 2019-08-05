@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biens>
+  <agence>
+    <page1><![CDATA[]]></page1>
+    <page2><![CDATA[]]></page2>
+    <page3><![CDATA[]]></page3>
+    <page4><![CDATA[]]></page4>
+    <page5><![CDATA[]]></page5>
+    <nom_agence><![CDATA[Agence du Viaduc]]></nom_agence>
+    <telephone_agence><![CDATA[0634540406]]></telephone_agence>
+    <fax_agence><![CDATA[]]></fax_agence>
+    <email_agence><![CDATA[contact@agenceviaduc.fr]]></email_agence>
+    <url_agence><![CDATA[http://www.agenceviaduc.fr/]]></url_agence>
+    <nom_pays_agence><![CDATA[France]]></nom_pays_agence>
+    <ville_agence><![CDATA[Laval]]></ville_agence>
+    <code_postal_agence><![CDATA[53000]]></code_postal_agence>
+    <adresse_agence><![CDATA[137 rue du Vieux Saint Louis]]></adresse_agence>
+  </agence>
+</biens>

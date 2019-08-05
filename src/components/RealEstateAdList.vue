@@ -4,6 +4,7 @@
       v-for="ad in filteredAdList"
       class="lastAd--item"
       :ad="ad"
+      :adType="adType"
     />
   </div>
 </template>
@@ -20,6 +21,10 @@ export default {
       default: function () { return [] }
     },
     searchFilter: {
+      type: String,
+      default: ''
+    },
+    adType: {
       type: String,
       default: ''
     }

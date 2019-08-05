@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div class="header-wrapper">
+    <div class="header-wrapper desktop">
       <div class="menu-wrapper">
         <img src="../assets/logositeSVG.svg" alt="" v-on:click="goToHome()">
         <ul class="menu">
@@ -18,16 +18,29 @@
         <a class="button" href="#contact">Contact</a>
       </div>
     </div>
+    <Slide class="mobile">
+      <router-link :to="{ name: 'HomePage', params: {} }"><span>Home</span></router-link>
+      <router-link v-for="item in menuContent" :to="{ name: item.path, params: {} }"><span>{{ item.name }}</span></router-link>
+      <!-- <a id="home" href="#">
+        <span>Home</span>
+      </a> -->
+    </Slide>
   </header>
 </template>
 
 <script>
+  import { Slide } from 'vue-burger-menu'
   export default {
     name: 'Header',
+    components: {
+      Slide
+    },
     data: () => {
       return ({
         menuContent: [
-          { name: 'Vendre', path: 'SellPage' },
+          { name: 'Achat', path: 'BuyPage' },
+          { name: 'Confier votre bien', path: 'SellPage' },
+          { name: 'Location', path: 'RentPage' },
           { name: 'Agence', path: 'AgencePage' }
         ]
       });
@@ -132,5 +145,30 @@
     color: #FFF;
     margin-left: 30px;
     text-decoration: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .header-wrapper.desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: block;
+    }
+
+    header {
+      padding: 0;
+      min-height: 90px;
+      background-color: white;
+    }
+
+    .bm-burger-button {
+      left: 30px;
+      top: 30px;
+    }
   }
 </style>

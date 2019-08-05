@@ -5,7 +5,7 @@
     <div class="headband--wrapper">
       <div class="caption--wrapper">
         <h2 class="title-big"><span class="lightblue">Achetez, louez ou vendez</span><br> un bien immobilier en Mayenne avec Viaduc Immobilier</h2>
-        <p class="title-sub">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL. Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p>
+        <!-- <p class="title-sub">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL. Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p> -->
 
         <!-- <div class="searchBar--container">
           Searchbar here (wip)
@@ -15,7 +15,7 @@
         <img src="../assets/Viaduc.png" alt="">
       </div>
     </div>
-    <input type="text" name="" value="" v-model="search">
+    <!-- <input type="text" name="" value="" v-model="search"> -->
     <div class="lastAdded--wrapper">
       <div class="lastAddedFilters-container">
         <h2>Derniers ajouts</h2>
@@ -49,6 +49,9 @@
     mounted () {
       this.$nextTick(function () {
         this.lastAds = this.$parent.annonces
+        for (var i = 0; i < this.lastAds.length; i++) {
+          console.log(this.lastAds[i].type_transaction[0])
+        }
       })
     }
 
@@ -97,7 +100,6 @@
   }
 
   .lastAddedFilters-container {
-
     text-align: center;
   }
 
@@ -129,4 +131,26 @@
     right: 15%;
     z-index: -1;
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .homePage--container {
+      width: 100%;
+    }
+
+    .headband--wrapper {
+      padding: 20px;
+      flex-direction: column-reverse;
+    }
+
+    .image--wrapper img {
+      width: 100%;
+    }
+
+    .lastAddedFilters-container p {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+
+  /* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {} */
 </style>

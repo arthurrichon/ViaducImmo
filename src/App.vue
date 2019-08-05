@@ -26,7 +26,7 @@
       },
       methods: {
         getXml () {
-          let xml = require('../static/base.xml')
+          let xml = require('../static/data/base.xml')
           this.annonces = xml.biens.bien
         },
         toggleOverflowClass (val) {
@@ -69,5 +69,11 @@
 
     main {
       padding-top: 150px;
+    }
+
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+      main {
+        padding-top: 70px;
+      }
     }
 </style>

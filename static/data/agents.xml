@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agents>
+<agent id="1">
+    <ID><![CDATA[1]]></ID>
+    <nom><![CDATA[DEMO]]></nom>
+    <prenom><![CDATA[Jacques]]></prenom>
+    <telfixe><![CDATA[]]></telfixe>
+    <telport><![CDATA[]]></telport>
+    <email><![CDATA[]]></email>
+    <NumCartePro><![CDATA[]]></NumCartePro>
+    <CarteProDelivreeA><![CDATA[]]></CarteProDelivreeA>
+    <Competence><![CDATA[0]]></Competence>
+    <Description></Description>
+    <photo><![CDATA[]]></photo>
+</agent>
+</agents>

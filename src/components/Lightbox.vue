@@ -119,4 +119,14 @@ export default {
   .modal-fade-leave-active {
     transition: opacity .5s ease
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .modal {
+      width: 80%;
+    }
+
+    .modal img {
+      width: 100%;
+    }
+  }
 </style>

@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import HomePage from '@/pages/HomePage'
 import RealEstatePage from '@/pages/RealEstatePage'
 import SellPage from '@/pages/SellPage'
+import RentPage from '@/pages/RentPage'
+import BuyPage from '@/pages/BuyPage'
 import MentionsPage from '@/pages/MentionsPage'
 import AgencePage from '@/pages/AgencePage'
 
@@ -34,6 +36,19 @@ export default new Router({
       path: '/agence',
       name: 'AgencePage',
       component: AgencePage
-    }
-  ]
+    },
+    {
+      path: '/location',
+      name: 'RentPage',
+      component: RentPage
+    },
+    {
+      path: '/achat',
+      name: 'BuyPage',
+      component: BuyPage
+    },
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })

@@ -59,10 +59,11 @@
       <div class="form-bloc half">
         <h2>Vous avez autre chose à nous dire ?</h2>
         <textarea name="name" class="standard-input" placeholder="message" rows="9" v-model="formData.message"></textarea>
-        <vue-recaptcha :size="'50px'" sitekey="6Lchm6UUAAAAAOgHxs-ivJHt5SC2sUSWylB7K7qc">
-          <!-- <button type="button" name="button">click me</button> -->
-        </vue-recaptcha>
-        <button class="orange-button" type="button" name="button" v-on:click="submit()">Envoyer</button>
+        <div class="buttons-container">
+          <vue-recaptcha sitekey="6LdsvqgUAAAAAH64Pgsz_wvbKqnvx-daI4wk4JaP" @verify="verifyCaptcha" :style="windowWidth < 481 ? classObject : ''"></vue-recaptcha>
+          <button class="orange-button" type="button" name="button" v-on:click="submit()" :disabled="!hasValidatedRecaptcha">Envoyer</button>
+        </div>
+
       </div>
     </div>
   </div>
@@ -97,7 +98,12 @@ export default {
       tel: '',
       message: '',
       formattedBody: '',
-      dispo: []
+      dispo: [],
+      hasValidatedRecaptcha: false
+    },
+    windowWidth: 0,
+    classObject: {
+      'transform': 'scale(0.73)'
     }
   }),
   methods: {
@@ -105,14 +111,16 @@ export default {
       this.formData.type = type
     },
     submit () {
-      this.formDispoContent()
-      axios({
-        method: 'post',
-        url: '/static/contact_vente.php',
-        data: this.formData
-      }).then(res => {
-        console.log(res)
-      })
+      if (hasValidatedRecaptcha) {
+        this.formDispoContent()
+        axios({
+          method: 'post',
+          url: '/static/contact_vente.php',
+          data: this.formData
+        }).then(res => {
+          console.log(res)
+        })
+      }
     },
     formDispoContent () {
       let dayArray = []
@@ -126,12 +134,20 @@ export default {
         }
       }
       this.formData.dispo = dayArray
+    },
+    verifyCaptcha (res) {
+      res ? this.hasValidatedRecaptcha = true : this.hasValidatedRecaptcha = false
     }
   },
   watch: {
     type: function (c, o) {
       this.formData.type = this.type
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.windowWidth = document.documentElement.clientWidth
+    })
   }
 }
 </script>
@@ -301,6 +317,68 @@ export default {
   .step-2 {
     display: flex;
     align-items: flex-start;
+  }
 
+  .orange-button:disabled {
+    background-color: #888;
+    border-color: #888;
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .buttons-container {
+      flex-direction: column;
+    }
+
+    .buttons-container .big-button {
+      margin: 10px 0;
+      width: 100%;
+      padding: 10px 20px;
+      box-sizing: border-box;
+    }
+
+    .buttons-container .big-button p {
+      margin-left: 15px;
+    }
+
+    .image.appartement {
+      /* height: 50px; */
+    }
+
+    .image.fdc {
+      height: 54px;
+    }
+
+    .input-container .standard-input {
+      width: 100%;
+    }
+
+    .orange-button {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .form-bloc.half {
+      width: 100%;
+      margin: 0;
+    }
+
+    .step.step-2 {
+      flex-direction: column;
+    }
+
+    .dispo-container {
+      flex-direction: column;
+    }
+
+    .dispo-list {
+      width: 100%;
+    }
+
+    .dispo-list .dispo-item {
+      width: 100%;
+      box-sizing: border-box;
+      margin: 5px 0;
+    }
   }
 </style>

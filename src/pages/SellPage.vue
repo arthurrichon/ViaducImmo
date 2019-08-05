@@ -73,4 +73,19 @@ export default {
     margin-top: 0px;
     margin-bottom: 60px;
   }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .page-content {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .title-container h2 {
+      width: 80%;
+      margin: 20px auto;
+      flex-direction: column;
+    }
+  }
+
 </style>

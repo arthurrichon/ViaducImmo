@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biens>
+  <bien id="12">
+    <idbien><![CDATA[12]]></idbien>
+    <ville><![CDATA[BONCHAMP LES LAVAL]]></ville>
+    <nom_secteur><![CDATA[Laval Agglo]]></nom_secteur>
+    <description_internet><![CDATA[BONCHAMP, MAISON CONTEMPORAINE DE 2009:<br />terrain de 1500 m&#178; au calme d'une impasse proposant une pi&egrave;ce de vie de50 m&#178; orient&eacute;e Ouest, cuisine am&eacute;nag&eacute; et &eacute;quip&eacute;e de 19 m&#178; avec baie ouvrant sur terrasse, <br />V&eacute;ritable suite parentale avec salle d'eau.A l'&eacute;tage vaste espace central desservant 4 chambres fonctionnelles, 2 salle d'eau. cave enterr&eacute;e, lingerie, garage et carport,<br />Chauffage pompe &agrave; chaleur.DPE: B&nbsp; &nbsp;R&eacute;f: 012PL&nbsp; 418 000&euro; HAI &agrave; la charge de l'acqu&eacute;reur soit 4,5%TTC ( 400 000&euro; hors honoraires) Contactez Pascal LEROY agent commercial au: 06 22 48 77 07]]></description_internet>
+    <type_transaction><![CDATA[vente]]></type_transaction>
+    <prix><![CDATA[418000]]></prix>
+    <type_bien><![CDATA[Maison Contemporaine]]></type_bien>
+    <image_princ_min><![CDATA[PhotoPrincMin_78.jpeg]]></image_princ_min>
+  </bien>
+  <agence>
+    <horaire><![CDATA[]]></horaire>
+    <nom_agence><![CDATA[Agence du Viaduc]]></nom_agence>
+    <IDAGENCE><![CDATA[AGENCE_1]]></IDAGENCE>
+    <telephone_agence><![CDATA[0634540406]]></telephone_agence>
+    <fax_agence><![CDATA[]]></fax_agence>
+    <email_agence><![CDATA[contact@agenceviaduc.fr]]></email_agence>
+    <url_agence><![CDATA[http://www.agenceviaduc.fr/]]></url_agence>
+    <nom_pays_agence><![CDATA[France]]></nom_pays_agence>
+    <ville_agence><![CDATA[Laval]]></ville_agence>
+    <code_postal_agence><![CDATA[53000]]></code_postal_agence>
+    <adresse_agence><![CDATA[137 rue du Vieux Saint Louis]]></adresse_agence>
+    <mot_cles><![CDATA[Vente Location Achat Laval Estimation Transaction Laval]]></mot_cles>
+    <titre_site><![CDATA[Agence Viaduc Immobilier Laval]]></titre_site>
+    <description_agence><![CDATA[Agence Immobiliere]]></description_agence>
+    <texte_bienvenue><![CDATA[]]></texte_bienvenue>
+    <lien_googlemap><![CDATA[]]></lien_googlemap>
+    <slogan_agence><![CDATA[]]></slogan_agence>
+    <numTVA_agence><![CDATA[FR 67 844810622]]></numTVA_agence>
+    <numSIRET_agence><![CDATA[844 810 622 R.C.S. Laval]]></numSIRET_agence>
+    <numIDENTIFICATION_agence><![CDATA[]]></numIDENTIFICATION_agence>
+    <NumCartePro><![CDATA[CPI 5301 2019 000 039 296]]></NumCartePro>
+    <CarteProDelivreeA><![CDATA[JESSICA ARFEL]]></CarteProDelivreeA>
+  </agence>
+</biens>

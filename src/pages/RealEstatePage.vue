@@ -1,12 +1,16 @@
 <template>
-  <div class="adpage-container">
+  <div class="adpage-container" v-show="ad">
     <div class="title-container">
       <h2><span class="black">{{ ad.type_bien[0] }}</span> <span class="orange">{{ ad.prix[0] }} €</span></h2>
     </div>
 
-    <hooper :itemsToShow="2" :infiniteScroll="true" style="height: 436px;">
-      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-if="name !== 'image_princ_min'" v-on:click.native="showLightbox(name)">
-        <img class="slider-img" v-bind:src="imagePath(images[0])" alt="" style="height: 100%" >
+    <hooper v-bind:style="{height: height || 'auto'}"
+      :settings="hooperSettings"
+      id="hooper"
+      ref="slider"
+      >
+      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-show="name !== 'image_princ_min'" v-on:click.native="showLightbox(name)">
+        <img class="slider-img" v-bind:src="imagePath(images[0])" alt="" style="height: 100%">
       </slide>
       <slide>
         <div class="custom-slide">
@@ -21,7 +25,7 @@
     <div class="adcontent-container">
       <div class="bloc fullwidth-bloc">
         <h2 class="standard-title">Description</h2>
-        <p id="description" class="standard-content">{{ decode(ad.description_internet[0]) }}</p>
+        <div id="description" class="standard-content"></div>
       </div>
 
       <div class="bloc third-bloc">
@@ -94,43 +98,84 @@ export default {
   name: 'RealEstatePage',
   components: { ContactForm, GraphComponent, Hooper, Slide, HooperNavigation, Lightbox },
   data: () => ({
-    ad: {},
+    ad: null,
     lightboxImage: '',
-    isModalVisible: false
+    isModalVisible: false,
+    slideClientHeight: '',
+    height: '',
+    hooperSettings: {
+      breakpoints: {
+        itemsToShow: 2,
+        infiniteScroll: true,
+        500: {
+          itemsToShow: 1
+        }
+      }
+    }
   }),
+  created () {
+    this.getAd()
+  },
   mounted () {
-    this.$nextTick(function () {
-      let ad = this.$parent.annonces.find(obj => {
+    console.log('b')
+    this.test()
+    console.log(this.$refs.slider.$el.clientHeight)
+    this.calcImageHeight()
+    this.lightboxImage = 'a'
+    this.clientHeight = this.$refs.slider.$el.clientHeight
+    let that = this
+    setTimeout(() => {
+      this.getDecodedDescription(this.ad.description_internet[0])
+    })
+  },
+  methods: {
+    async test () {
+      await this.$refs.slider.updateWidth()
+    },
+    getAd () {
+      let ad = this.$ads.find(obj => {
         return obj.idbien[0] === this.$route.params.ad
       })
       this.ad = ad
-      this.getDecodedDescription()
-    })
-
-  },
-  methods: {
-    decode: function (str) {
+    },
+    calcImageHeight () {
+      console.log("a")
+      let sliderHeight = this.$refs.slider
+    },
+    decode (str) {
       var txt = document.createElement('textarea')
     	txt.innerHTML = str;
     	return txt.value;
     },
-    getDecodedDescription: function () {
+    getDecodedDescription () {
       var txt = document.createElement('textarea')
     	txt.innerHTML = this.ad.description_internet[0]
       let container = document.getElementById("description")
       container.innerHTML = txt.value
     },
-    imagePath: function (img) {
+    imagePath (img) {
       return require('../../static/data/' + img)
     },
-    showLightbox(imageArrayKey) {
+    showLightbox (imageArrayKey) {
       this.$emit('hasModalOpened', true);
       this.lightboxImage = this.imagePath(this.ad.images[0][imageArrayKey])
       this.isModalVisible = true;
     },
-    closeLightbox() {
+    closeLightbox () {
       this.$emit('hasModalOpened', false);
       this.isModalVisible = false;
+    }
+  },
+  watch: {
+    slideClientHeight: {
+      immediate: true,
+      handler: function (n, o) {
+        let that = this
+        setTimeout(() => {
+          that.height = that.$refs.slider.$el.clientHeight + 'px'
+          console.log(that.$refs.slider.$el.clientHeight)
+        }, 0)
+      }
     }
   }
 }
@@ -142,6 +187,9 @@ export default {
   width: 80%;
   margin: 0 auto;
   min-height: 100%;
+}
+.hooper {
+  height: auto;
 }
 
 .title-container h2{
@@ -184,6 +232,9 @@ export default {
 .bloc {
   margin-bottom: 30px;
 }
+.bloc.fullwidth-bloc {
+  width: 100%;
+}
 .standard-list-container li {
   font-size: 16px;
   font-family: 'Karla', sans-serif;
@@ -201,10 +252,10 @@ export default {
   background-color: #0A0633;
   height: 100%;
   width: 100%;
-  padding: 20px;
+  padding: 60px 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -228,4 +279,26 @@ export default {
   min-width: 60%;
   text-align: center;
 }
+
+.hooper-next { padding: 0 0 0 20px; }
+.hooper-prev { padding: 0 20px 0 0; }
+.hooper-next svg, .hooper-prev svg { fill: white }
+.hooper-next, .hooper-prev {
+  background-color: #3FD1FF;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .bloc.third-bloc {
+    width: 100%;
+  }
+  .title-container h2 {
+    width: 80%;
+    margin: 20px auto;
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+    margin: 20px 0;
+  }
+}
+
+
 </style>
