@@ -6,10 +6,10 @@
     </div>
 
     <div class="page-content">
-      <div class="page-content--title">
+      <!-- <div class="page-content--title">
         <h2>Dites nous tout</h2>
         <p>Si vous ne connaissez pas certaines informations, <br>nous règleront cela ensemble lors de notre premier rendez-vous</p>
-      </div>
+      </div> -->
       <RealEstateAdList
         :adList="lastAds"
         :adType="'location'"

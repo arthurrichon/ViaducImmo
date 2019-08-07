@@ -58,7 +58,7 @@
   }
 </script>
 
-<style scoped>
+<style>
 
   header {
     width: 100%;
@@ -154,6 +154,19 @@
     display: none;
   }
 
+  .bm-burger-button {
+    left: 30px;
+    top: 30px;
+  }
+
+  .bm-menu {
+    background-color: #F4FCFF;
+  }
+
+  .bm-item-list a span {
+    color: #222;
+  }
+
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .header-wrapper.desktop {
       display: none;
@@ -163,16 +176,15 @@
       display: block;
     }
 
+
+
     header {
       padding: 0;
       min-height: 90px;
       background-color: white;
     }
 
-    .bm-burger-button {
-      left: 30px;
-      top: 30px;
-    }
+
     .phone-number {
       position: absolute;
       bottom: 70px;
