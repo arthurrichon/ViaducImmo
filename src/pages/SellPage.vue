@@ -13,14 +13,17 @@
       <SellForm />
     </div>
 
+    <ContactForm :width="'80%'"/>
+
   </div>
 </template>
 
 <script>
+import ContactForm from '@/components/ContactForm'
 import SellForm from '@/components/SellForm'
 export default {
   name: 'SellPage',
-  components: { SellForm }
+  components: { SellForm, ContactForm }
 }
 </script>
 

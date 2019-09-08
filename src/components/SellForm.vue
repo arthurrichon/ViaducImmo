@@ -18,8 +18,12 @@
           </div>
         </div>
         <div class="checkbox-container">
-          <input type="checkbox" name="already" value="" v-model="alreadySelling">
+          <input type="checkbox" name="already" value="" v-model="formData.alreadySelling">
           <label for="already">Mon bien est déjà en vente ailleurs</label>
+        </div>
+        <div class="checkbox-container">
+          <input type="checkbox" name="already" value="" v-model="formData.isRenting">
+          <label for="already">Je souhaite mettre mon bien en location</label>
         </div>
       </div>
       <div class="form-bloc full">
@@ -78,7 +82,6 @@ export default {
   components: { VueRecaptcha },
   data: () => ({
     step: 1,
-    alreadySelling: false,
     days: {
       Lundi: { selected: false, matin: false, aprem: false },
       Mardi: { selected: false, matin: false, aprem: false },
@@ -99,7 +102,9 @@ export default {
       message: '',
       formattedBody: '',
       dispo: [],
-      hasValidatedRecaptcha: false
+      hasValidatedRecaptcha: false,
+      alreadySelling: false,
+      isRenting: false
     },
     windowWidth: 0,
     classObject: {

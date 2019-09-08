@@ -41,7 +41,7 @@
         }
       },
       mounted () {
-        this.getXml()
+        this.annonces = this.$ads
       }
     }
 </script>

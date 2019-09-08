@@ -16,15 +16,18 @@
       />
     </div>
 
+    <ContactForm :width="'80%'"/>
+
   </div>
 </template>
 
 <script>
+import ContactForm from '@/components/ContactForm'
 import RealEstateAdList from '../components/RealEstateAdList'
 export default {
   name: 'RentPage',
   components: {
-    RealEstateAdList
+    RealEstateAdList, ContactForm
   },
   data: () => ({
     lastAds: []

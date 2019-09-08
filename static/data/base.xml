@@ -1,9 +1,939 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <biens>
+  <bien id="27">
+    <idbien><![CDATA[27]]></idbien>
+    <reference><![CDATA[27]]></reference>
+    <position>1</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[Centre Ville]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location meubl&eacute;e 1 pi&egrave;ce &agrave; Laval Centre-Ville Pr&eacute;fecture<br />Laval, centre quartier gare, chambre meubl&eacute;e de 12 m&#178;, lumineuse et calme. S&eacute;jour, kitchenette &eacute;quip&eacute;e, Un coin nuit, une salle de bain avec douche en commun. Doubles vitrages.<br />Une place de parking.Commerces &agrave; proximit&eacute;. DPE : vierge Loyer: 200 euros Provision pour charges: 75&euro; (eau, &eacute;lectricit&eacute;, chauffage, internet)<br />une place de parking.<br />Honoraires &agrave; la charge du locataire: 200&euro;]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T1]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[1]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[0]]></etage>
+    <nb_etage><![CDATA[0]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[75]]></montant_charges>
+    <bandeau><![CDATA[13]]></bandeau>
+    <surface_habitable><![CDATA[12]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[275]]></prix>
+    <fai><![CDATA[200]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[200]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[1]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Collectif Gaz]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_175.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_175.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_176.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_177.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_178.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_186.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_187.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="31">
+    <idbien><![CDATA[31]]></idbien>
+    <reference><![CDATA[31]]></reference>
+    <position>2</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[LAVAL]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location meubl&eacute;e 1 pi&egrave;ce &agrave; Laval Hilard<br />Laval, centre quartier Haute Follis, studio meubl&eacute; de 15m&#178;, lumineux et calme. S&eacute;jour, kitchenette &eacute;quip&eacute;e,<br />Un coin nuit, une salle de bain avec douche. Doubles vitrages.<br />Loyer: 225 euros<br />Provision pour charges: 50 euros (eau chaude, eau froide, chauffage et &eacute;lectricit&eacute;)<br />Honoraires TTC &agrave; la charge du locataire : 200 euros ]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T1]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[1]]></nb_piece>
+    <nb_chambre><![CDATA[0]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[0]]></etage>
+    <nb_etage><![CDATA[0]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[50]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[15]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[275]]></prix>
+    <fai><![CDATA[200]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[225]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_196.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_196.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_197.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_198.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_199.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_200.jpeg]]></image_5>
+    </images>
+  </bien>
+  <bien id="30">
+    <idbien><![CDATA[30]]></idbien>
+    <reference><![CDATA[30]]></reference>
+    <position>3</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location meubl&eacute;e 1 pi&egrave;ce &agrave; Laval Avesni&egrave;res<br />Laval, centre, rive gauche, studio meubl&eacute; de 25m&#178;, lumineux et calme. S&eacute;jour, kitchenette &eacute;quip&eacute;e,<br />Un coin nuit, une salle de bain avec douche. Doubles vitrages.<br />Loyer: 270 euros<br />Provision pour charges: 25 euros(eau, entretien et &eacute;lectricit&eacute; des parties communes)<br />Honoraires TTC &agrave; la charge du locataire : 200 euros ]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T1]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[1]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[0]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[1]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[25]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[25]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[295]]></prix>
+    <fai><![CDATA[200]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[270]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_192.jpeg]]></image_1>
+    <image_2><![CDATA[Photo_193.jpeg]]></image_2>
+    <image_princ_min><![CDATA[PhotoPrincMin_193.jpeg]]></image_princ_min>
+    <image_3><![CDATA[Photo_194.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_195.jpeg]]></image_4>
+    </images>
+  </bien>
+  <bien id="21">
+    <idbien><![CDATA[21]]></idbien>
+    <reference><![CDATA[21]]></reference>
+    <position>4</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[Centre Ville]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[T1 meubl&eacute; de 20 m&#178; au 2&egrave;me &eacute;tage : une pi&egrave;ce principale avec un coin cuisine semi &eacute;quip&eacute;e (plaque 2 feux, frigo top &eacute;vier et meubles bas), salle d'eau et WC. <br />Le logement est propos&eacute; avec mise a disposition des meuble : 1 table avec 2 tabourets, 1 lit mezzanine 140x200, 2 fauteuils, 2 tables basses, un four micro onde, 1 mini four grill.<br /><br />Loyer mensuel de 330 &euro; charges comprises, dont 25&euro; de provision sur charges mensuelles locatives.<br /><br />Honoraires TTC &agrave; la charge du locataire (Honoraires de visites, constitution de dossiers, r&eacute;daction de bail et &eacute;tat des lieux) de 220 &euro; , dont&nbsp; 60&euro; d&#146;honoraire d&#146;&eacute;tat des lieux.]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T1]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[1]]></nb_piece>
+    <nb_chambre><![CDATA[0]]></nb_chambre>
+    <nb_place_parking><![CDATA[0]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[2]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190807]]></date_creation>
+    <date_modif><![CDATA[20190807]]></date_modif>
+    <montant_charges><![CDATA[25]]></montant_charges>
+    <bandeau><![CDATA[6]]></bandeau>
+    <surface_habitable><![CDATA[20]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[330]]></prix>
+    <fai><![CDATA[220]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[305]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[oui]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <exposition_bien><![CDATA[Sud]]></exposition_bien>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_131.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_131.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_132.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_133.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_134.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_135.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_136.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="24">
+    <idbien><![CDATA[24]]></idbien>
+    <reference><![CDATA[24]]></reference>
+    <position>5</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53940]]></code_postal>
+    <ville><![CDATA[ST BERTHEVIN]]></ville>
+    <nom_secteur><![CDATA[]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Appartement de 30m&#178; dans une petite r&eacute;sidence calme.<br />S&eacute;jour avec cuisine ouverte, une chambre, une salle de bains et WC.<br />Appartement r&eacute;nov&eacute; r&eacute;cemment.<br />Honoraires &agrave; la charge du locataire: 243 &euro; comprenant les &eacute;tats de lieux et la r&eacute;daction du bail.]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T2]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[2]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[0]]></etage>
+    <nb_etage><![CDATA[0]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[50]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[30]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[375]]></prix>
+    <fai><![CDATA[243]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[325]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_161.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_161.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_162.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_163.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_164.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_165.jpeg]]></image_5>
+    </images>
+  </bien>
+  <bien id="23">
+    <idbien><![CDATA[23]]></idbien>
+    <reference><![CDATA[23]]></reference>
+    <position>6</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[Centre Ville]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location appartement 25 m&#178; &agrave; Laval Centre-Ville Cath&eacute;drale.<br /><br />Petite r&eacute;sidence de 6 logements, dans une impasse avec parking.<br />S&eacute;jour tr&egrave;s lumineux, grande baie vitr&eacute;e, double vitrage, un coin nuit s&eacute;par&eacute;e. Cuisine &eacute;quip&eacute;e &#171; &agrave; l&#146;am&eacute;ricaine &#187; avec four, 4 plaques vitroc&eacute;ramique, frigo.<br />Salle de bain avec baignoire. Volets roulants &eacute;lectriques, Interphone.<br />Appartement r&eacute;nov&eacute; r&eacute;cemment (cuisine neuve, tapisseries neuves, carrelages neufs, peintures neuves, salle de bain neuve, etc.&#133;.)<br />Petite cave de 3m&#178;. Bail standard avec mise &agrave; disposition des meubles + lave-linge. <br />Les charges comprennent l&#146;eau froide et chaude, le chauffage, l&#146;&eacute;lectricit&eacute; des parties communes.<br /><br />Honoraires &agrave; la charge du locataire: 267 &euro; <br />Copropri&eacute;t&eacute; : 6 lots ]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T1]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[1]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[0]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[0]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[85]]></montant_charges>
+    <bandeau><![CDATA[13]]></bandeau>
+    <surface_habitable><![CDATA[25]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[440]]></prix>
+    <fai><![CDATA[267]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[355]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[oui]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Collectif Gaz]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <exposition_bien><![CDATA[Ouest]]></exposition_bien>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_150.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_150.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_151.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_152.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_153.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_154.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_155.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="28">
+    <idbien><![CDATA[28]]></idbien>
+    <reference><![CDATA[28]]></reference>
+    <position>7</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Loue T2 50m&#178;<br />Dans une petite r&eacute;sidence de 8 logements<br />Appartement&nbsp; R&eacute;nov&eacute; r&eacute;cemment, de 50m&#178; lumineux et calme dans petite r&eacute;sidence de 8 logements.<br />S&eacute;jour avec coin cuisine neuve &eacute;quip&eacute;e, plaque vitro, r&eacute;frig&eacute;rateur.<br />Une chambre et une salle de bain avec douche. <br />Interphone, <br />Honoraires &agrave; la charge du locataire: 322 &euro;]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T2]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[2]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[0]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[1]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[20]]></montant_charges>
+    <bandeau><![CDATA[13]]></bandeau>
+    <surface_habitable><![CDATA[50]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[450]]></prix>
+    <fai><![CDATA[277]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[430]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <exposition_bien><![CDATA[Est]]></exposition_bien>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_179.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_179.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_180.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_181.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_182.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_183.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_184.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="29">
+    <idbien><![CDATA[29]]></idbien>
+    <reference><![CDATA[29]]></reference>
+    <position>8</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[GARE]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location appartement 2 pi&egrave;ces &agrave; Laval Centre-Ville Pr&eacute;fecture<br />Loue appartement de 45 m&#178; de type 2 quartier gare.<br />Grande pi&egrave;ce de vie avec coin cuisine &eacute;quip&eacute;e, une chambre, une salle de bain avec grande douche.<br />Un cellier, stationnement libre dans la r&eacute;sidence.<br />Loyer 430 &euro;&nbsp; &nbsp;Charges : 35 &euro; comprenant : &#201;lectricit&eacute; des communs, Eau.<br />Honoraires &agrave; la charge du locataire: 322 &euro;<br />]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T2]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[2]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[1]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[35]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[45]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[465]]></prix>
+    <fai><![CDATA[322]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[430]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <exposition_bien><![CDATA[Sud-Ouest]]></exposition_bien>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_188.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_188.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_189.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_190.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_191.jpeg]]></image_4>
+    </images>
+  </bien>
+  <bien id="22">
+    <idbien><![CDATA[22]]></idbien>
+    <reference><![CDATA[22]]></reference>
+    <position>9</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53940]]></code_postal>
+    <ville><![CDATA[ST BERTHEVIN]]></ville>
+    <nom_secteur><![CDATA[]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location appartement 2 pi&egrave;ces &agrave; Saint-Berthevin<br />Saint Berthevin, centre ville, appartement T2 de 48m&#178;, lumineux et calme. <br />S&eacute;jour, cuisine ouverte &eacute;quip&eacute;e ( plaques vitro, grand frigo/cong&eacute;lateur, un four et une hotte). <br />Une chambres, une salle de bain avec douche. Doubles vitrages, volets roulants. <br />Nombreux stationnements et commerces &agrave; proximit&eacute;.<br />Loyer: 450 euros&nbsp; &nbsp;Provision pour charges: 25 euros<br />Honoraires TTC &agrave; la charge du locataire : 337 euros ]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T2]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[2]]></nb_piece>
+    <nb_chambre><![CDATA[1]]></nb_chambre>
+    <nb_place_parking><![CDATA[0]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[2]]></etage>
+    <nb_etage><![CDATA[2]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190807]]></date_creation>
+    <date_modif><![CDATA[20190807]]></date_modif>
+    <montant_charges><![CDATA[25]]></montant_charges>
+    <bandeau><![CDATA[13]]></bandeau>
+    <surface_habitable><![CDATA[48]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[475]]></prix>
+    <fai><![CDATA[337]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[450]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[oui]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[Individuel &eacute;lectrique]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_140.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_140.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_141.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_142.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_143.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_144.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_145.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="26">
+    <idbien><![CDATA[26]]></idbien>
+    <reference><![CDATA[26]]></reference>
+    <position>10</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[GARE]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location appartement 4 pi&egrave;ces &agrave; Laval Centre-Ville Pr&eacute;fecture<br /><br />RESIDENCE DE STANDING &agrave; LAVAL<br /><br />Beau 4 pi&egrave;ces de 82.98m&#178; dans r&eacute;sidence neuve de standing. <br />Compos&eacute; d'un s&eacute;jour avec cuisine &eacute;quip&eacute;e (plaque vitro, hotte, rangements...) 3 chambres, salle de bain et wc s&eacute;par&eacute;.&nbsp; Jouissance d'un balcon et d'une cave num&eacute;rot&eacute;e (N&deg;1)<br />Vous disposez d'une place de parking privative avec ce logement (n&deg;84).<br /><br />Loyer mensuel de 583&euro; charges comprises, dont 90&euro; de provision sur charges mensuelles locatives.<br /><br />Honoraires TTC &agrave; la charge du locataire (Honoraires de visites, constitution de dossiers, r&eacute;daction de bail et &eacute;tat des lieux) de 583&euro;, dont 248.94&euro; d&#146;honoraire d&#146;&eacute;tat des lieux.&nbsp; <br />N&#146;h&eacute;sitez pas &agrave; nous contacter pour obtenir plus d&#146;informations ou organiser une visite.]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T4]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[4]]></nb_piece>
+    <nb_chambre><![CDATA[3]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[2]]></etage>
+    <nb_etage><![CDATA[4]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[90]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[83]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[583]]></prix>
+    <fai><![CDATA[583]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[493]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[non]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_169.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_169.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_170.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_171.jpeg]]></image_3>
+    <image_4><![CDATA[Photo_172.jpeg]]></image_4>
+    <image_5><![CDATA[Photo_173.jpeg]]></image_5>
+    <image_6><![CDATA[Photo_174.jpeg]]></image_6>
+    </images>
+  </bien>
+  <bien id="25">
+    <idbien><![CDATA[25]]></idbien>
+    <reference><![CDATA[25]]></reference>
+    <position>11</position>
+    <nom_pays><![CDATA[France]]></nom_pays>
+    <code_postal><![CDATA[53000]]></code_postal>
+    <ville><![CDATA[LAVAL]]></ville>
+    <nom_secteur><![CDATA[GARE]]></nom_secteur>
+    <proximite><![CDATA[]]></proximite>
+    <description_internet><![CDATA[Location appartement 4 pi&egrave;ces &agrave; Laval Centre-Ville Pr&eacute;fecture<br /><br />RESIDENCE DE STANDING &agrave; LAVAL<br /><br />Beau 4 pi&egrave;ces d'environ 81m&#178; dans r&eacute;sidence neuve de standing. <br />Compos&eacute; d'un s&eacute;jour avec cuisine &eacute;quip&eacute;e (plaque vitro, hotte, rangements...) trois chambres, salle de bain et wc s&eacute;par&eacute;.&nbsp; Jouissance d'un balcon.&nbsp; &nbsp;Vous disposez d'une place de parking privative en sous sol (n&deg;21) ainsi qu'une Cave n&deg;7.<br /><br />Loyer mensuel de 627&euro; charges comprises, dont 75&euro; de provision sur charges mensuelles locatives.<br /><br />Honoraires TTC &agrave; la charge du locataire (Honoraires de visites, constitution de dossiers, r&eacute;daction de bail et &eacute;tat des lieux) de 627 &euro; , dont 244.44&euro; d&#146;honoraire d&#146;&eacute;tat des lieux.&nbsp; N&#146;h&eacute;sitez pas &agrave; nous contacter pour obtenir plus d&#146;informations ou organiser une visite.]]></description_internet>
+    <type_transaction>location</type_transaction>
+    <type_bien><![CDATA[T4]]></type_bien>
+    <agence_bien><![CDATA[AGENCE_1]]></agence_bien>
+    <nom_conseiller><![CDATA[DEMO Jacques]]></nom_conseiller>
+    <categorie_bien><![CDATA[2]]></categorie_bien>
+    <nb_piece><![CDATA[4]]></nb_piece>
+    <nb_chambre><![CDATA[3]]></nb_chambre>
+    <nb_place_parking><![CDATA[1]]></nb_place_parking>
+    <nb_parking_exterieur><![CDATA[0]]></nb_parking_exterieur>
+    <etage><![CDATA[2]]></etage>
+    <nb_etage><![CDATA[4]]></nb_etage>
+    <ascenseur><![CDATA[non]]></ascenseur>
+    <terrasse><![CDATA[non]]></terrasse>
+    <surface_terrasse>0</surface_terrasse>
+    <date_creation><![CDATA[20190808]]></date_creation>
+    <date_modif><![CDATA[20190808]]></date_modif>
+    <montant_charges><![CDATA[75]]></montant_charges>
+    <bandeau><![CDATA[1]]></bandeau>
+    <surface_habitable><![CDATA[81]]></surface_habitable>
+    <surface_jardin><![CDATA[0]]></surface_jardin>
+    <prix><![CDATA[627]]></prix>
+    <fai><![CDATA[627]]></fai>
+    <a_la_charge_du>vendeur</a_la_charge_du>
+    <compc>0</compc>
+    <en_copropriete>non</en_copropriete>
+    <charge_prev></charge_prev>
+    <depot_garantie><![CDATA[552]]></depot_garantie>
+    <Forfait_mensuel><![CDATA[2]]></Forfait_mensuel>
+    <Frais_de_bail><![CDATA[0]]></Frais_de_bail>
+    <Frais_EDL><![CDATA[0]]></Frais_EDL>
+    <Latitude><![CDATA[0]]></Latitude>
+    <Longitude><![CDATA[0]]></Longitude>
+    <agent_commercial>non</agent_commercial>
+    <RSAC></RSAC>
+    <nb_lots><![CDATA[0]]></nb_lots>
+    <procedure_redressement_syndic>non</procedure_redressement_syndic>
+    <surface_constructible><![CDATA[0]]></surface_constructible>
+    <edf><![CDATA[non]]></edf>
+    <gdf><![CDATA[non]]></gdf>
+    <eau><![CDATA[non]]></eau>
+    <c_o_s><![CDATA[0]]></c_o_s>
+    <neuf><![CDATA[oui]]></neuf>
+    <stationnement><![CDATA[Parking]]></stationnement>
+    <piscine><![CDATA[non]]></piscine>
+    <climatisation><![CDATA[non]]></climatisation>
+    <acces_handicape><![CDATA[non]]></acces_handicape>
+    <proche_commodites><![CDATA[oui]]></proche_commodites>
+    <taxe_fonciere><![CDATA[0]]></taxe_fonciere>
+    <type_chauffage><![CDATA[]]></type_chauffage>
+    <tout_a_egout><![CDATA[non]]></tout_a_egout>
+    <fausse_sceptique><![CDATA[non]]></fausse_sceptique>
+    <consommation_energetique>0</consommation_energetique>
+    <emission_GES >0</emission_GES>
+    <url_visite_virtuelle><![CDATA[]]></url_visite_virtuelle>
+    <url_video_youtube><![CDATA[]]></url_video_youtube>
+    <annee_construction><![CDATA[]]></annee_construction>
+    <coups_de_coeur><![CDATA[non]]></coups_de_coeur>
+    <etat_general><![CDATA[1]]></etat_general>
+    <standing>NC</standing>
+    <Location_saisonniere><![CDATA[non]]></Location_saisonniere>
+    <PN_VEFA><![CDATA[0]]></PN_VEFA>
+    <PN_Num_Lot><![CDATA[]]></PN_Num_Lot>
+    <PN_Avancement><![CDATA[]]></PN_Avancement>
+    <PN_Fiscalite><![CDATA[]]></PN_Fiscalite>
+    <PN_DateLivraison><![CDATA[]]></PN_DateLivraison>
+    <images>
+    <image_1><![CDATA[Photo_166.jpeg]]></image_1>
+    <image_princ_min><![CDATA[PhotoPrincMin_166.jpeg]]></image_princ_min>
+    <image_2><![CDATA[Photo_167.jpeg]]></image_2>
+    <image_3><![CDATA[Photo_168.jpeg]]></image_3>
+    </images>
+  </bien>
   <bien id="3">
     <idbien><![CDATA[3]]></idbien>
     <reference><![CDATA[3]]></reference>
-    <position>1</position>
+    <position>12</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53170]]></code_postal>
     <ville><![CDATA[RUILLE FROID FONDS]]></ville>
@@ -92,7 +1022,7 @@
   <bien id="9">
     <idbien><![CDATA[9]]></idbien>
     <reference><![CDATA[9]]></reference>
-    <position>2</position>
+    <position>13</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53320]]></code_postal>
     <ville><![CDATA[MONTJEAN]]></ville>
@@ -177,7 +1107,7 @@
   <bien id="19">
     <idbien><![CDATA[19]]></idbien>
     <reference><![CDATA[19]]></reference>
-    <position>3</position>
+    <position>14</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53000]]></code_postal>
     <ville><![CDATA[LAVAL]]></ville>
@@ -199,7 +1129,7 @@
     <terrasse><![CDATA[non]]></terrasse>
     <surface_terrasse>0</surface_terrasse>
     <date_creation><![CDATA[20190716]]></date_creation>
-    <date_modif><![CDATA[20190722]]></date_modif>
+    <date_modif><![CDATA[20190808]]></date_modif>
     <montant_charges><![CDATA[25]]></montant_charges>
     <bandeau><![CDATA[13]]></bandeau>
     <surface_habitable><![CDATA[27.5]]></surface_habitable>
@@ -266,7 +1196,7 @@
   <bien id="20">
     <idbien><![CDATA[20]]></idbien>
     <reference><![CDATA[20]]></reference>
-    <position>4</position>
+    <position>15</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53000]]></code_postal>
     <ville><![CDATA[LAVAL]]></ville>
@@ -288,7 +1218,7 @@
     <terrasse><![CDATA[non]]></terrasse>
     <surface_terrasse>0</surface_terrasse>
     <date_creation><![CDATA[20190717]]></date_creation>
-    <date_modif><![CDATA[20190722]]></date_modif>
+    <date_modif><![CDATA[20190808]]></date_modif>
     <montant_charges><![CDATA[97]]></montant_charges>
     <bandeau><![CDATA[1]]></bandeau>
     <surface_habitable><![CDATA[48.3]]></surface_habitable>
@@ -356,7 +1286,7 @@
   <bien id="11">
     <idbien><![CDATA[11]]></idbien>
     <reference><![CDATA[11]]></reference>
-    <position>5</position>
+    <position>16</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53000]]></code_postal>
     <ville><![CDATA[LAVAL]]></ville>
@@ -378,7 +1308,7 @@
     <terrasse><![CDATA[oui]]></terrasse>
     <surface_terrasse><![CDATA[0]]></surface_terrasse>
     <date_creation><![CDATA[20190423]]></date_creation>
-    <date_modif><![CDATA[20190704]]></date_modif>
+    <date_modif><![CDATA[20190808]]></date_modif>
     <montant_charges><![CDATA[0]]></montant_charges>
     <bandeau><![CDATA[2]]></bandeau>
     <surface_habitable><![CDATA[80]]></surface_habitable>
@@ -450,7 +1380,7 @@
   <bien id="16">
     <idbien><![CDATA[16]]></idbien>
     <reference><![CDATA[16]]></reference>
-    <position>6</position>
+    <position>17</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53000]]></code_postal>
     <ville><![CDATA[LAVAL]]></ville>
@@ -472,7 +1402,7 @@
     <terrasse><![CDATA[non]]></terrasse>
     <surface_terrasse>0</surface_terrasse>
     <date_creation><![CDATA[20190625]]></date_creation>
-    <date_modif><![CDATA[20190722]]></date_modif>
+    <date_modif><![CDATA[20190808]]></date_modif>
     <montant_charges><![CDATA[70]]></montant_charges>
     <bandeau><![CDATA[9]]></bandeau>
     <surface_habitable><![CDATA[78]]></surface_habitable>
@@ -542,7 +1472,7 @@
   <bien id="18">
     <idbien><![CDATA[18]]></idbien>
     <reference><![CDATA[18]]></reference>
-    <position>7</position>
+    <position>18</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53240]]></code_postal>
     <ville><![CDATA[LA BIGOTTIERE]]></ville>
@@ -564,7 +1494,7 @@
     <terrasse><![CDATA[oui]]></terrasse>
     <surface_terrasse><![CDATA[0]]></surface_terrasse>
     <date_creation><![CDATA[20190704]]></date_creation>
-    <date_modif><![CDATA[20190704]]></date_modif>
+    <date_modif><![CDATA[20190808]]></date_modif>
     <montant_charges><![CDATA[0]]></montant_charges>
     <bandeau><![CDATA[6]]></bandeau>
     <surface_habitable><![CDATA[147]]></surface_habitable>
@@ -640,7 +1570,7 @@
   <bien id="1">
     <idbien><![CDATA[1]]></idbien>
     <reference><![CDATA[003PL]]></reference>
-    <position>8</position>
+    <position>19</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53810]]></code_postal>
     <ville><![CDATA[CHANGE]]></ville>
@@ -733,7 +1663,7 @@
   <bien id="2">
     <idbien><![CDATA[2]]></idbien>
     <reference><![CDATA[2]]></reference>
-    <position>9</position>
+    <position>20</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53810]]></code_postal>
     <ville><![CDATA[CHANGE]]></ville>
@@ -830,7 +1760,7 @@
   <bien id="7">
     <idbien><![CDATA[7]]></idbien>
     <reference><![CDATA[7]]></reference>
-    <position>10</position>
+    <position>21</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53000]]></code_postal>
     <ville><![CDATA[LAVAL]]></ville>
@@ -926,7 +1856,7 @@
   <bien id="4">
     <idbien><![CDATA[4]]></idbien>
     <reference><![CDATA[4]]></reference>
-    <position>11</position>
+    <position>22</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53960]]></code_postal>
     <ville><![CDATA[BONCHAMP LES LAVAL]]></ville>
@@ -1024,7 +1954,7 @@
   <bien id="5">
     <idbien><![CDATA[5]]></idbien>
     <reference><![CDATA[5]]></reference>
-    <position>12</position>
+    <position>23</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53170]]></code_postal>
     <ville><![CDATA[ARQUENAY]]></ville>
@@ -1124,7 +2054,7 @@
   <bien id="6">
     <idbien><![CDATA[6]]></idbien>
     <reference><![CDATA[6]]></reference>
-    <position>13</position>
+    <position>24</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53200]]></code_postal>
     <ville><![CDATA[AZE]]></ville>
@@ -1223,7 +2153,7 @@
   <bien id="12">
     <idbien><![CDATA[12]]></idbien>
     <reference><![CDATA[12]]></reference>
-    <position>14</position>
+    <position>25</position>
     <nom_pays><![CDATA[France]]></nom_pays>
     <code_postal><![CDATA[53960]]></code_postal>
     <ville><![CDATA[BONCHAMP LES LAVAL]]></ville>

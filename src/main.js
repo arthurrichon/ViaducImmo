@@ -9,7 +9,7 @@ import VueResource from 'vue-resource'
 // Vue.use(VueReCaptcha, { siteKey: '6Lchm6UUAAAAAOgHxs-ivJHt5SC2sUSWylB7K7qc' })
 Vue.config.productionTip = false
 Vue.use(VueResource)
-Vue.prototype.$ads = require('../static/base.xml').biens.bien
+Vue.prototype.$ads = require('../static/data/base.xml').biens.bien
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

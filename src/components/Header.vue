@@ -1,4 +1,4 @@
-<template>
+i<template>
   <header>
     <div class="header-wrapper desktop">
       <div class="menu-wrapper">
@@ -24,9 +24,8 @@
       <!-- <a id="home" href="#">
         <span>Home</span>
       </a> -->
-      <div class="phone-number">
-        02 43 49 17 63
-      </div>
+      <div class="desktop phone-number">02 43 49 17 63</div>
+      <a href="tel:0243491763"class="mobile phone-number">02 43 49 17 63</a>
     </Slide>
   </header>
 </template>
@@ -42,8 +41,8 @@
       return ({
         menuContent: [
           { name: 'Achat', path: 'BuyPage' },
-          { name: 'Confier votre bien', path: 'SellPage' },
           { name: 'Location', path: 'RentPage' },
+          { name: 'Confier votre bien', path: 'SellPage' },
           { name: 'Agence', path: 'AgencePage' }
         ]
       });
@@ -160,7 +159,7 @@
   }
 
   .bm-menu {
-    background-color: #F4FCFF;
+    background-color: #F4FCFF !important;
   }
 
   .bm-item-list a span {
@@ -168,7 +167,7 @@
   }
 
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .header-wrapper.desktop {
+    .desktop {
       display: none;
     }
 
@@ -176,7 +175,9 @@
       display: block;
     }
 
-
+    .phone-number {
+      text-decoration: none;
+    }
 
     header {
       padding: 0;
