@@ -6,8 +6,8 @@
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
-        <button type="button" name="button" v-on:click="emit('prev')">Prev</button>
-        <button type="button" name="button" v-on:click="emit('next')">Next</button>
+        <button type="button" name="button" class="ctrl-button prev" v-on:click="emit('prev')">Précédent</button>
+        <button type="button" name="button" class="ctrl-button next" v-on:click="emit('next')">Suivant</button>
         <img v-bind:src="image" alt="">
         <button
           type="button"
@@ -133,4 +133,21 @@ export default {
       width: 100%;
     }
   }
+
+  .ctrl-button {
+    width: 80px;
+    height: 30px;
+    background-color: #3FD1FF;
+    border: 1px solid #3FD1FF;
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .ctrl-button.prev { left: 0; }
+  .ctrl-button.next { right: 0; }
 </style>

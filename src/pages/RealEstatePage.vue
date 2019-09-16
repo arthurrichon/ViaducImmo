@@ -131,7 +131,7 @@ export default {
       }
     }
   }),
-  mounted () {
+  created () {
     this.getAd()
   },
   mounted () {
@@ -176,6 +176,7 @@ export default {
       await this.$refs.slider.updateWidth()
     },
     getAd () {
+      console.log(this.$route.params.ad)
       let ad = this.$props.ads.find(obj => {
         return obj.idbien[0] === this.$route.params.ad
       })
