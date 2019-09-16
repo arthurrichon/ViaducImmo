@@ -6,7 +6,8 @@
         aria-labelledby="modalTitle"
         aria-describedby="modalDescription"
       >
-
+        <button type="button" name="button" v-on:click="emit('prev')">Prev</button>
+        <button type="button" name="button" v-on:click="emit('next')">Next</button>
         <img v-bind:src="image" alt="">
         <button
           type="button"
@@ -32,6 +33,9 @@ export default {
   methods: {
     close() {
       this.$emit('close');
+    },
+    emit (eventName) {
+      this.$emit(eventName)
     }
   }
 }

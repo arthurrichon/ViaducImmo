@@ -43,7 +43,17 @@ export default new Router({
       component: RentPage
     },
     {
+      path: '/location/:searchTerm',
+      name: 'RentPage',
+      component: RentPage
+    },
+    {
       path: '/achat',
+      name: 'BuyPage',
+      component: BuyPage
+    },
+    {
+      path: '/achat/:searchTerm',
       name: 'BuyPage',
       component: BuyPage
     },

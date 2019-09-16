@@ -1,4 +1,4 @@
-i<template>
+<template>
   <header>
     <div class="header-wrapper desktop">
       <div class="menu-wrapper">
@@ -19,13 +19,13 @@ i<template>
       </div>
     </div>
     <Slide class="mobile">
-      <router-link :to="{ name: 'HomePage', params: {} }"><span>Home</span></router-link>
+      <router-link :to="{ name: 'HomePage', params: {} }"><span>Accueil</span></router-link>
       <router-link v-for="item in menuContent" :to="{ name: item.path, params: {} }"><span>{{ item.name }}</span></router-link>
       <!-- <a id="home" href="#">
         <span>Home</span>
       </a> -->
       <div class="desktop phone-number">02 43 49 17 63</div>
-      <a href="tel:0243491763"class="mobile phone-number">02 43 49 17 63</a>
+      <a href="tel:0243491763" class="mobile phone-number">02 43 49 17 63</a>
     </Slide>
   </header>
 </template>
@@ -72,7 +72,7 @@ i<template>
     top: 0;
     left: 0;
     background-color: white;
-    z-index: 10000;
+    z-index: 9999;
   }
   .header-wrapper {
     width: 70%;
@@ -160,13 +160,15 @@ i<template>
 
   .bm-menu {
     background-color: #F4FCFF !important;
+    height: 100vh;
+    box-sizing: border-box;
   }
 
   .bm-item-list a span {
     color: #222;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     .desktop {
       display: none;
     }
@@ -188,9 +190,18 @@ i<template>
 
     .phone-number {
       position: absolute;
-      bottom: 70px;
+      bottom: 20px;
       color: #FF8317;
       font-size: 30px;
+    }
+
+    a.phone-number {
+      text-decoration: none;
+    }
+
+    a.phone-number:visited {
+      color: #FF8317;
+      text-decoration: none;
     }
   }
 </style>

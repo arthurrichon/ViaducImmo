@@ -9,14 +9,14 @@
       id="hooper"
       ref="slider"
       >
-      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-show="name !== 'image_princ_min'" v-on:click.native="showLightbox(name)">
+      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-on:click.native="showLightbox(name)">
         <img class="slider-img" v-bind:src="imagePath(images[0])" alt="" style="height: 100%">
       </slide>
       <slide>
         <div class="custom-slide">
           <h2>Contacter l'agence :</h2>
-          <a class="orange-container">02 43 98 09 52</a>
-          <a class="orange-container">Par message</a>
+          <a class="orange-container" href="#contact">02 43 98 09 52</a>
+          <a class="orange-container" href="#contact">Par message</a>
         </div>
       </slide>
       <hooper-navigation slot="hooper-addons"></hooper-navigation>
@@ -81,7 +81,14 @@
       </div>
 
     </div>
-    <Lightbox ref="lightbox" :image="lightboxImage" v-show="isModalVisible" @close="closeLightbox"/>
+    <Lightbox
+      ref="lightbox"
+      :image="lightboxImage"
+      v-show="isModalVisible"
+      @close="closeLightbox"
+      @prev="getPreviousImage()"
+      @next="getNextImage()"
+    />
     <ContactForm :width="'100%'"/>
   </div>
 </template>
@@ -97,6 +104,12 @@ import 'hooper/dist/hooper.css';
 export default {
   name: 'RealEstatePage',
   components: { ContactForm, GraphComponent, Hooper, Slide, HooperNavigation, Lightbox },
+  props: {
+    ads: {
+      type: Array,
+      default: function () { return [] }
+    }
+  },
   data: () => ({
     ad: null,
     lightboxImage: '',
@@ -118,13 +131,11 @@ export default {
       }
     }
   }),
-  created () {
+  mounted () {
     this.getAd()
   },
   mounted () {
-    console.log('b')
     this.test()
-    console.log(this.$refs.slider.$el.clientHeight)
     this.calcImageHeight()
     this.lightboxImage = 'a'
     this.clientHeight = this.$refs.slider.$el.clientHeight
@@ -134,17 +145,43 @@ export default {
     })
   },
   methods: {
+    getPreviousImage () {
+      if (this.$refs.slider.currentSlide === 0) {
+        this.$refs.slider.slideTo(Object.keys(this.ad.images[0]).length - 1)
+      } else {
+        this.$refs.slider.slidePrev()
+      }
+
+      let imageName = this.getImageNameFromSliderIndex(this.$refs.slider.currentSlide)
+      this.showLightbox(imageName)
+    },
+    getNextImage () {
+      if (this.$refs.slider.currentSlide > Object.keys(this.ad.images[0]).length - 1) {
+        this.$refs.slider.slideTo(Object.keys(this.ad.images[0]).length - 1)
+      } else {
+        this.$refs.slider.slideNext()
+      }
+
+      let imageName = this.getImageNameFromSliderIndex(this.$refs.slider.currentSlide)
+      this.showLightbox(imageName)
+    },
+    getImageNameFromSliderIndex (imageIndex) {
+      if (imageIndex < 0) {
+        imageIndex = Object.keys(this.ad.images[0]).length - 1
+      }
+      let imageToShowKey = Object.keys(this.ad.images[0])[imageIndex]
+      return imageToShowKey
+    },
     async test () {
       await this.$refs.slider.updateWidth()
     },
     getAd () {
-      let ad = this.$ads.find(obj => {
+      let ad = this.$props.ads.find(obj => {
         return obj.idbien[0] === this.$route.params.ad
       })
       this.ad = ad
     },
     calcImageHeight () {
-      console.log("a")
       let sliderHeight = this.$refs.slider
     },
     decode (str) {
@@ -161,7 +198,8 @@ export default {
     imagePath (img) {
       return require('../../static/data/' + img)
     },
-    showLightbox (imageArrayKey) {
+    showLightbox (imageArrayKey, event) {
+      console.log(event)
       this.$emit('hasModalOpened', true);
       this.lightboxImage = this.imagePath(this.ad.images[0][imageArrayKey])
       this.isModalVisible = true;
@@ -181,6 +219,11 @@ export default {
           console.log(that.$refs.slider.$el.clientHeight)
         }, 0)
       }
+    },
+    '$props.ads': function (c, o) {
+      console.log('yeet')
+      console.log(this.$props.ads)
+      this.getAd()
     }
   }
 }

@@ -5,6 +5,7 @@
     <div class="headband--wrapper">
       <div class="caption--wrapper">
         <h2 class="title-big"><span class="lightblue"><vue-typer :text="['Achetez', 'Louez', 'Vendez']"></vue-typer></span><br> un bien immobilier en Mayenne avec Viaduc Immobilier</h2>
+        <SearchBar @onSearch="handleSearch"/>
         <!-- <p class="title-sub">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL. Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p> -->
 
         <!-- <div class="searchBar--container">
@@ -23,7 +24,7 @@
       </div>
       <div class="blue-background"></div>
       <RealEstateAdList
-        :adList="lastAds"
+        :adList="ads"
         :searchFilter="search"
       />
     </div>
@@ -35,6 +36,7 @@
 <script>
   import RealEstateAdList from '../components/RealEstateAdList'
   import ContactForm from '../components/ContactForm'
+  import SearchBar from '../components/SearchBar'
   import { VueTyper } from 'vue-typer'
 
   export default {
@@ -42,21 +44,24 @@
     components: {
       RealEstateAdList,
       ContactForm,
+      SearchBar,
       VueTyper
     },
     data: () => ({
       lastAds: [],
       search: ''
     }),
-    mounted () {
-      this.$nextTick(function () {
-        this.lastAds = this.$parent.annonces
-        for (var i = 0; i < this.lastAds.length; i++) {
-          console.log(this.lastAds[i].type_transaction[0])
-        }
-      })
+    props: {
+      ads: {
+        type: Array,
+        default: function () { return [] }
+      }
+    },
+    methods: {
+      handleSearch (searchTerm) {
+        this.$router.push({name: searchTerm.type, params: { searchTerm: searchTerm.term }})
+      }
     }
-
   }
 </script>
 

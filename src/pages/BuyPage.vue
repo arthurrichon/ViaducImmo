@@ -3,6 +3,7 @@
     <div class="title-container">
       <h2>Vous <span class="lightblue">achetez</span> votre bien,<br>nous pouvons vous aider.</h2>
       <!-- <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr<br>sed diam nonumy eirmod.</p> -->
+      <SearchBar @onSearch="handleSearch" :hasSelect="false"/>
     </div>
 
     <div class="page-content">
@@ -11,8 +12,9 @@
         <p>Si vous ne connaissez pas certaines informations, <br>nous règleront cela ensemble lors de notre premier rendez-vous</p>
       </div> -->
       <RealEstateAdList
-        :adList="lastAds"
+        :adList="ads"
         :adType="'vente'"
+        :filter="filter"
       />
     </div>
 
@@ -21,21 +23,30 @@
 
 <script>
 import RealEstateAdList from '../components/RealEstateAdList'
+import SearchBar from '../components/SearchBar'
 export default {
   name: 'BuyPage',
   components: {
-    RealEstateAdList
+    RealEstateAdList,
+    SearchBar
   },
   data: () => ({
-    lastAds: []
+    lastAds: [],
+    filter: ''
   }),
-  mounted () {
-    this.$nextTick(function () {
-      this.lastAds = this.$parent.annonces
-      for (var i = 0; i < this.lastAds.length; i++) {
-        console.log(this.lastAds[i].type_transaction[0])
-      }
-    })
+  props: {
+    ads: {
+      type: Array,
+      default: function () { return [] }
+    }
+  },
+  methods: {
+    handleSearch (searchTerm) {
+      this.filter = searchTerm.term
+    }
+  },
+  created () {
+    if (this.$route.params.searchTerm) this.filter = this.$route.params.searchTerm
   }
 }
 </script>
@@ -50,6 +61,10 @@ export default {
   font-family: 'Rubik', sans-serif;
   font-weight: bold;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .title-container h2 {

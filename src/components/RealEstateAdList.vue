@@ -5,6 +5,7 @@
       class="lastAd--item"
       :ad="ad"
       :adType="adType"
+      :filter="filter"
     />
   </div>
 </template>
@@ -25,6 +26,10 @@ export default {
       default: ''
     },
     adType: {
+      type: String,
+      default: ''
+    },
+    filter: {
       type: String,
       default: ''
     }

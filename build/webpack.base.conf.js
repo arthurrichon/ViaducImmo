@@ -30,6 +30,17 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.xml$/,
+        use: 'xml-loader',
+      },
+      {
+        test: /\.php$/,
+        loaders: [
+          'html-minify',
+          'php-loader'
+        ]
+      },
+      {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
@@ -62,17 +73,6 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
-      {
-        test: /\.xml$/i,
-        use: 'xml-loader',
-      },
-      {
-        test: /\.php$/,
-        loaders: [
-          'html-minify',
-          'php-loader'
-        ]
       }
     ]
   }
