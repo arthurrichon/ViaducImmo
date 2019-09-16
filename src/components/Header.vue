@@ -168,7 +168,7 @@
     color: #222;
   }
 
-  @media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  @media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
     .desktop {
       display: none;
     }
