@@ -40,9 +40,9 @@
     data: () => {
       return ({
         menuContent: [
-          { name: 'Achat', path: 'BuyPage' },
-          { name: 'Location', path: 'RentPage' },
-          { name: 'Confier votre bien', path: 'SellPage' },
+          { name: 'Acheter', path: 'BuyPage' },
+          { name: 'Louer', path: 'RentPage' },
+          { name: 'Vendre', path: 'SellPage' },
           { name: 'Agence', path: 'AgencePage' }
         ]
       });
@@ -105,22 +105,32 @@
     margin: 10px;
     list-style: none;
     cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #3FD1FF;
+    background-color: #3FD1FF;
+    transition: ease all 0.2s;
   }
 
   .menu li a {
     transition: ease all 0.2s;
+    color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .menu li.active {
+    background-color: white;
+  }
+
+  .menu li.active a {
+    color: #3FD1FF;
   }
 
   .menu li a:hover {
-    color: #3FD1FF;
+    color: #FFF;
+    filter: brightness(85%);
     transition: ease all 0.2s;
-  }
-
-
-  .menu li a {
-    text-decoration: none;
-    color: #4A4A4A;
-    font-size: 16px;
   }
 
   .contact-wrapper {

@@ -41,8 +41,8 @@
           // http://agenceviaduc.fr/static/data/base-2.xml
           let that = this
           let parseString = require('xml2js').parseString
-          let ads = axios.get('http://localhost:8081/static/data/base.xml').then((res) => {
-          // let ads = axios.get('http://agenceviaduc.fr/static/data/base.xml').then((res) => {
+          // let ads = axios.get('http://localhost:8081/static/data/base.xml').then((res) => {
+          let ads = axios.get('http://agenceviaduc.fr/static/data/base.xml').then((res) => {
             // this.annonces = res.data.biens.bien
             // console.log({res})
             parseString(res.data, function (err, response) {

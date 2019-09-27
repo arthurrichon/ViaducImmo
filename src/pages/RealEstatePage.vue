@@ -15,7 +15,7 @@
       <slide>
         <div class="custom-slide">
           <h2>Contacter l'agence :</h2>
-          <a class="orange-container" href="#contact">02 43 98 09 52</a>
+          <a class="orange-container" href="#contact">02 43 49 17 63</a>
           <a class="orange-container" href="#contact">Par message</a>
         </div>
       </slide>
