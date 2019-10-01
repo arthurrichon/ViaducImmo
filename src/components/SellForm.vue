@@ -209,6 +209,7 @@ export default {
     width: 50px;
     height: 64px;
     margin-top: 10px;
+    background-repeat: no-repeat;
   }
 
   .appartement {
@@ -216,6 +217,7 @@ export default {
     width: 50px;
     height: 64px;
     margin-top: 10px;
+    background-repeat: no-repeat;
   }
 
   .fdc {
@@ -223,6 +225,7 @@ export default {
     width: 50px;
     height: 64px;
     margin-top: 10px;
+    background-repeat: no-repeat;
   }
 
   .active .maison { background-image: url('../assets/home-white.svg');}
