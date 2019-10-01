@@ -8,7 +8,7 @@
       >
         <button type="button" name="button" class="ctrl-button prev" v-on:click="emit('prev')">Précédent</button>
         <button type="button" name="button" class="ctrl-button next" v-on:click="emit('next')">Suivant</button>
-        <img v-bind:src="image" alt="">
+        <img v-bind:src="image" alt="" v-bind:style="{height: imgHeight ? imgHeight + 'px' : '100%'}">
         <button
           type="button"
           class="btn-green"
@@ -24,6 +24,9 @@
 <script>
 export default {
   name: 'Lightbox',
+  data: () => ({
+    imgHeight: 0
+  }),
   props: {
     image: {
       type: String,
@@ -36,6 +39,23 @@ export default {
     },
     emit (eventName) {
       this.$emit(eventName)
+    },
+    onResize (e) {
+      this.imgHeight = (e.target.innerHeight / 10) * 8
+    }
+  },
+  mounted () {
+    this.$nextTick(function () {
+      window.addEventListener('resize', this.onResize)
+      this.imgHeight = (window.innerHeight / 10) * 8
+    })
+  },
+  beforeDestroy () {
+    window.removeEventListener('resize', this.onResize)
+  },
+  watch: {
+    imgHeight: function (c, o) {
+      console.log(c)
     }
   }
 }
