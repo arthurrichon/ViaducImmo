@@ -4,7 +4,7 @@
       <div class="menu-wrapper">
         <img src="../assets/logositeSVG.svg" alt="" v-on:click="goToHome()">
         <ul class="menu">
-          <li v-for="item in menuContent">
+          <li v-for="item in menuContent" :class="[item.path === $route.name ? 'active' : '']">
             <router-link :to="{ name: item.path, params: {} }">{{ item.name }}</router-link>
           </li>
         </ul>
@@ -13,7 +13,7 @@
       <div class="contact-wrapper">
         <div class="phone-wrapper">
           <img src="../assets/call.svg" alt="">
-          <span>02 43 49 17 63</span>
+          <span>{{ phoneNumber }}</span>
         </div>
         <a class="button" href="#contact">Contact</a>
       </div>
@@ -24,8 +24,8 @@
       <!-- <a id="home" href="#">
         <span>Home</span>
       </a> -->
-      <div class="desktop phone-number">02 43 49 17 63</div>
-      <a href="tel:0243491763" class="mobile phone-number">02 43 49 17 63</a>
+      <div class="desktop phone-number">{{ phoneNumber }}</div>
+      <a href="tel:0243491763" class="mobile phone-number">{{ phoneNumber }}</a>
     </Slide>
   </header>
 </template>
@@ -44,7 +44,8 @@
           { name: 'Louer', path: 'RentPage' },
           { name: 'Vendre', path: 'SellPage' },
           { name: 'Agence', path: 'AgencePage' }
-        ]
+        ],
+        phoneNumber: '02 43 49 17 63'
       });
     },
     methods: {
@@ -53,12 +54,16 @@
         // { name: 'Louer', path: '/buy' },
         this.$router.push('/')
       }
+    },
+    watch: {
+      '$route.name': function (c, o) {
+
+      }
     }
   }
 </script>
 
 <style>
-
   header {
     width: 100%;
     padding: 20px;
@@ -127,9 +132,13 @@
     color: #3FD1FF;
   }
 
+  .menu li:hover {
+    background-color: #3fd1ffc7;
+    transition: ease all 0.2s;
+  }
+
   .menu li a:hover {
     color: #FFF;
-    filter: brightness(85%);
     transition: ease all 0.2s;
   }
 
