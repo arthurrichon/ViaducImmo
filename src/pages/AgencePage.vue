@@ -1,7 +1,7 @@
 <template>
   <div class="sellPage--container">
     <div class="title-container">
-      <h2>L'agence <span class="lightblue">Viaduc Immobilier</span> vous<br>accueille tous les jours à Laval</h2>
+      <h1>L'agence <span class="lightblue">Viaduc Immobilier</span> vous<br>accueille tous les jours à Laval</h1>
       <p class="subline">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL.<br>Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p>
     </div>
 

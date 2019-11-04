@@ -4,7 +4,7 @@
     <!-- Main headband -->
     <div class="headband--wrapper">
       <div class="caption--wrapper">
-        <h2 class="title-big"><span class="lightblue"><vue-typer :text="['Achetez', 'Louez', 'Vendez']"></vue-typer></span><br> un bien immobilier en Mayenne avec Viaduc Immobilier</h2>
+        <h1 class="title-big"><span class="lightblue"><vue-typer :text="['Achetez', 'Louez', 'Vendez']"></vue-typer></span><br> un bien immobilier en Mayenne avec Viaduc Immobilier</h1>
         <SearchBar @onSearch="handleSearch"/>
         <!-- <p class="title-sub">L'agence du viaduc est une agence de proximité indépendante qui vous accueillera prochainement  137 rue du vieux saint Louis à LAVAL. Vous écouter pour mieux comprendre vos besoins, vous conseiller pour la LOCATION, la VENTE ou l'ACHAT de votre projet immobilier et vous informer jusqu’à la signature des actes définitifs.</p> -->
 
@@ -87,7 +87,7 @@
     color: #3FD1FF;
   }
 
-  h2.title-big {
+  h1.title-big {
     font-size: 33px;
     font-family: 'Rubik', sans-serif;
     font-weight: bold;
@@ -146,6 +146,10 @@
     background-color: #3FD1FF;
   }
 
+  .caption--wrapper {
+    width: 40%;
+  }
+
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .homePage--container {
       width: 100%;
@@ -163,6 +167,26 @@
     .lastAddedFilters-container p {
       width: 90%;
       margin: 0 auto;
+    }
+
+    .caption--wrapper {
+      width: auto;
+    }
+  }
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 769px) {
+    .headband--wrapper {
+      flex-direction: column-reverse;
+    }
+
+    .caption--wrapper {
+      text-align: center;
+      width: auto;
+    }
+
+    .searchBar--container {
+      margin: 20px auto !important;
+      justify-content: center !important;
     }
   }
 

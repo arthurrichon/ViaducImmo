@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="mentionsPage--container">
     <div class="title-container">
-      <h2>Mentions légales</h2>
+      <h1>Mentions légales</h1>
     </div>
     <div class="mentions-container">
       <h2>Définitions</h2>
@@ -615,9 +615,9 @@ LAVAL</p>
         </tbody>
       </table>
     </div>
-    <!-- <div class="mediator">
+    <div class="mediator">
       <img src="../assets/mediateur.png" alt="" style="width: 200px">
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -693,6 +693,7 @@ export default {
     font-size: 12px;
   }
 
+  .mentions-container h1,
   .mentions-container h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
@@ -729,6 +730,10 @@ export default {
     border-top: 1px solid #8EAADB;
   }
 
+  .grid table tbody tr:last-child {
+    border-bottom: 1px solid #8EAADB;
+  }
+
   .grid table tbody tr:nth-child(2n+1) {
     background-color: #D9E2F3;
   }
@@ -740,5 +745,10 @@ export default {
 
   .grid table tbody tr td:nth-child(1) {
     border-left: 1px solid #8EAADB;
+  }
+
+  .mediator {
+    text-align: center;
+    margin: 10px 0;
   }
 </style>

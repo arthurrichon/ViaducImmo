@@ -80,7 +80,7 @@
     z-index: 9999;
   }
   .header-wrapper {
-    width: 70%;
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -157,6 +157,7 @@
     margin-left: 8px;
     font-family: 'Rubik';
     font-weight: bold;
+    min-width: 120px;
   }
 
   .button {
@@ -164,7 +165,7 @@
     background-color: #FF8317;
     border-radius: 20px;
     color: #FFF;
-    margin-left: 30px;
+    margin-left: 10px;
     text-decoration: none;
   }
 

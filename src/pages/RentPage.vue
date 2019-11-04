@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="sellPage--container">
     <div class="title-container">
-      <h2>Vous <span class="lightblue">louez</span> votre bien,<br>nous pouvons vous aider.</h2>
+      <h1>Vous <span class="lightblue">louez</span> votre bien,<br>nous pouvons vous aider.</h1>
       <!-- <p class="subline">Lorem ipsum dolor sit amet, consetetur sadipscing elitr<br>sed diam nonumy eirmod.</p> -->
       <SearchBar @onSearch="handleSearch" :hasSelect="false"/>
     </div>
@@ -113,7 +113,7 @@ p.subline {
     padding: 20px;
   }
 
-  .title-container h2 {
+  .title-container h1 {
     width: 80%;
     margin: 20px auto;
     flex-direction: column;

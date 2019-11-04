@@ -1,7 +1,7 @@
 <template>
   <div class="adpage-container" v-show="ad">
     <div class="title-container">
-      <h2><span class="black">{{ ad.type_bien[0] }}</span> <span class="orange">{{ ad.prix[0] }} €</span></h2>
+      <h1><span class="black">{{ ad.type_bien[0] }}</span> <span class="orange">{{ ad.prix[0] }} €</span></h1>
     </div>
 
     <hooper v-bind:style="{height: height || 'auto'}"
@@ -9,7 +9,7 @@
       id="hooper"
       ref="slider"
       >
-      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-on:click.native="showLightbox(name)">
+      <slide v-for="(images, name, indx) in ad.images[0]" :key="indx" :index="indx" v-on:click.native="showLightbox(name)" v-if="name !== 'image_princ_min'">
         <img class="slider-img" v-bind:src="imagePath(images[0])" alt="" style="height: 100%">
       </slide>
       <slide>
@@ -141,8 +141,9 @@ export default {
     this.clientHeight = this.$refs.slider.$el.clientHeight
     let that = this
     setTimeout(() => {
-      this.getDecodedDescription(this.ad.description_internet[0])
-    })
+      that.clientHeight = that.$refs.slider.$el.clientHeight
+      that.getDecodedDescription(that.ad.description_internet[0])
+    }, 0)
   },
   methods: {
     getPreviousImage () {
@@ -216,8 +217,14 @@ export default {
       handler: function (n, o) {
         let that = this
         setTimeout(() => {
-          that.height = that.$refs.slider.$el.clientHeight + 'px'
-          console.log(that.$refs.slider.$el.clientHeight)
+            // that.height = that.$refs.slider.$el.clientHeight + 'px'
+            // console.log(that.$refs.slider.$el.clientHeight)
+          if (window.innerWidth > 400){
+            that.height = that.$refs.slider.$el.clientHeight + 'px'
+            console.log(that.$refs.slider.$el.clientHeight)
+          } else {
+            that.height = "225px"
+          }
         }, 0)
       }
     },
@@ -241,7 +248,7 @@ export default {
   height: auto;
 }
 
-.title-container h2{
+.title-container h1 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -327,6 +334,7 @@ export default {
   font-weight: bold;
   min-width: 60%;
   text-align: center;
+  margin: 12px 0;
 }
 
 .hooper-next { padding: 0 0 0 20px; }
@@ -339,7 +347,7 @@ export default {
   .bloc.third-bloc {
     width: 100%;
   }
-  .title-container h2 {
+  .title-container h1 {
     width: 80%;
     margin: 20px auto;
     flex-direction: column;
@@ -348,6 +356,11 @@ export default {
     margin: 20px 0;
   }
 }
+
+.hooper-slide {
+  height: auto;
+}
+
 
 
 </style>
